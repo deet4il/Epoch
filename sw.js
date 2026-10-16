@@ -1,4 +1,4 @@
-const CACHE_NAME = 'epoch-v4.3';
+const CACHE_NAME = 'epoch-v4.4';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -6,7 +6,7 @@ const STATIC_ASSETS = [
   './manifest.json',
   './favicon.png',
   './icon-192.png',
-  './icon-512.jpg'
+  './icon-512.png'
 ];
 
 self.addEventListener('install', (event) => {
