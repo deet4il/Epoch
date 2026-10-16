@@ -21,7 +21,10 @@
       --accent: #facc15;
       --accent-dim: rgba(250, 204, 21, 0.12);
       --highlight: #38bdf8;
+      --success: #10b981;
+      --success-dim: rgba(16, 185, 129, 0.15);
       --danger: #f43f5e;
+      --danger-dim: rgba(244, 63, 94, 0.15);
       --text-main: #f8fafc;
       --text-sub: #94a3b8;
       --text-dim: #64748b;
@@ -45,9 +48,9 @@
       overflow-x: hidden;
     }
 
-    /* Minimalist Header */
+    /* Header */
     header {
-      background: rgba(15, 23, 42, 0.9);
+      background: rgba(15, 23, 42, 0.95);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
@@ -94,7 +97,7 @@
     .stats-bar {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
       font-size: 0.85rem;
       font-weight: 700;
     }
@@ -114,148 +117,157 @@
       font-variant-numeric: tabular-nums;
     }
 
-    /* Active Drawn Card */
-    .hero-tray {
-      padding: 16px;
-      background: radial-gradient(circle at 50% 0%, #1e293b 0%, #080c14 80%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .tray-indicator {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--text-dim);
-      margin-bottom: 8px;
-      font-weight: 700;
-    }
-
-    .incoming-card {
-      background: var(--card-bg);
-      border: 1px solid var(--highlight);
-      box-shadow: 0 0 20px rgba(56, 189, 248, 0.18);
-      border-radius: 12px;
-      padding: 14px 18px;
-      width: 100%;
-      max-width: 460px;
-      text-align: center;
-      animation: floatIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .tags-row {
-      display: flex;
-      justify-content: center;
-      gap: 6px;
-      margin-bottom: 8px;
-    }
-
-    .pill {
-      font-size: 0.68rem;
-      padding: 2px 7px;
-      border-radius: 4px;
-      background: #1e293b;
-      color: var(--text-sub);
-      text-transform: uppercase;
-      font-weight: 600;
-      letter-spacing: 0.03em;
-    }
-
-    .incoming-card h2 {
-      font-size: 1.02rem;
-      font-weight: 700;
-      color: #fff;
-      line-height: 1.35;
-      margin-bottom: 6px;
-    }
-
-    .incoming-card p {
-      font-size: 0.8rem;
-      color: var(--text-sub);
-      line-height: 1.4;
-    }
-
-    /* Timeline Play Area */
-    .timeline-stream {
+    /* Main Container */
+    main {
       flex: 1;
-      padding: 18px 14px;
-      max-width: 480px;
+      padding: 16px;
+      max-width: 520px;
       margin: 0 auto;
       width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      justify-content: flex-start;
+      gap: 14px;
     }
 
-    /* Insertion Slot Buttons */
-    .slot-trigger {
-      width: 100%;
-      max-width: 340px;
-      background: rgba(56, 189, 248, 0.04);
-      border: 1px dashed rgba(56, 189, 248, 0.4);
+    /* Question Card */
+    .question-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-bright);
+      border-radius: 14px;
+      padding: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .meta-tags {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .pill {
+      font-size: 0.65rem;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: #1e293b;
       color: var(--highlight);
-      padding: 9px 14px;
-      margin: 5px 0;
-      border-radius: 8px;
-      font-size: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .question-text {
+      font-size: 1rem;
       font-weight: 600;
+      line-height: 1.45;
+      color: #fff;
+    }
+
+    /* Options Stack */
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .opt-btn {
+      background: #0f172a;
+      border: 1px solid var(--border-bright);
+      color: var(--text-main);
+      padding: 12px 14px;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      line-height: 1.35;
+      text-align: left;
       cursor: pointer;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      transition: background 0.12s ease, transform 0.12s ease;
+      align-items: flex-start;
+      gap: 10px;
+      transition: border-color 0.15s, background 0.15s;
     }
 
-    .slot-trigger span {
-      font-size: 0.7rem;
-      transform: translateY(1px);
+    .opt-btn:active:not(:disabled) {
+      background: #1e293b;
+      border-color: var(--highlight);
     }
 
-    .slot-trigger:active {
-      background: var(--highlight);
-      color: #080c14;
-      transform: scale(0.98);
+    .opt-btn.correct {
+      background: var(--success-dim) !important;
+      border-color: var(--success) !important;
+      color: #34d399 !important;
+      font-weight: 700;
     }
 
-    /* Positioned Timeline Entries */
-    .placed-node {
+    .opt-btn.incorrect {
+      background: var(--danger-dim) !important;
+      border-color: var(--danger) !important;
+      color: #f87171 !important;
+    }
+
+    .opt-letter {
+      font-weight: 800;
+      font-size: 0.8rem;
+      color: var(--accent);
+      padding-top: 1px;
+    }
+
+    /* Trivia Explanation Box */
+    .trivia-card {
       background: #0d1527;
       border: 1px solid var(--border-bright);
+      border-left: 3px solid var(--accent);
       border-radius: 10px;
-      padding: 10px 14px;
-      width: 100%;
-      max-width: 460px;
-      position: relative;
+      padding: 14px;
+      display: none;
+      animation: fadeIn 0.25s ease-out;
     }
 
-    .node-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 3px;
+    .trivia-card.active {
+      display: block;
     }
 
-    .node-date {
+    .trivia-title {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
       color: var(--accent);
       font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .trivia-content {
       font-size: 0.82rem;
-      letter-spacing: 0.02em;
+      line-height: 1.5;
+      color: var(--text-sub);
+      white-space: pre-line;
     }
 
-    .node-region {
-      font-size: 0.65rem;
-      color: var(--text-dim);
+    /* Advance Button */
+    .btn-next {
+      background: var(--highlight);
+      color: #080c14;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: none;
+      text-align: center;
       text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 4px;
+      margin-bottom: 20px;
     }
 
-    .node-title {
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: #e2e8f0;
-      line-height: 1.3;
+    .btn-next.active {
+      display: block;
+    }
+
+    .btn-next:active {
+      opacity: 0.9;
+      transform: scale(0.99);
     }
 
     /* Game Over Modal */
@@ -268,7 +280,7 @@
       align-items: center;
       padding: 20px;
       z-index: 100;
-      backdrop-filter: blur(6px);
+      backdrop-filter: blur(8px);
     }
 
     .overlay.active {
@@ -310,13 +322,8 @@
       letter-spacing: 0.05em;
     }
 
-    .btn-replay:active {
-      transform: scale(0.98);
-      opacity: 0.9;
-    }
-
-    @keyframes floatIn {
-      0% { opacity: 0; transform: translateY(-8px); }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(6px); }
       100% { opacity: 1; transform: translateY(0); }
     }
   </style>
@@ -337,30 +344,35 @@
     </div>
   </header>
 
-  <div class="hero-tray">
-    <div class="tray-indicator">Slot this milestone into order</div>
-    <div class="incoming-card" id="incoming-card">
-      <div class="tags-row">
-        <span class="pill" id="card-region">Region</span>
-        <span class="pill" id="card-cat">Domain</span>
+  <main>
+    <div class="question-card">
+      <div class="meta-tags">
+        <span class="pill" id="q-region">Region</span>
+        <span class="pill" id="q-category">Category</span>
       </div>
-      <h2 id="card-title">Title</h2>
-      <p id="card-clue">Clue</p>
+      <div class="question-text" id="q-text">Loading question...</div>
     </div>
-  </div>
 
-  <main class="timeline-stream" id="timeline-area"></main>
+    <div class="options-grid" id="options-container"></div>
+
+    <div class="trivia-card" id="trivia-box">
+      <div class="trivia-title">Historical & Scientific Context</div>
+      <div class="trivia-content" id="trivia-text"></div>
+    </div>
+
+    <button class="btn-next" id="next-btn" onclick="nextQuestion()">Next Question ➔</button>
+  </main>
 
   <div class="overlay" id="game-over-overlay">
     <div class="modal-box">
-      <h2>Timeline Broken</h2>
-      <p style="color: var(--text-sub); font-size: 0.85rem; margin-bottom: 14px;">You accumulated 3 chronological misalignments.</p>
+      <h2>Session Complete</h2>
+      <p style="color: var(--text-sub); font-size: 0.85rem; margin-bottom: 14px;">You ran out of lives.</p>
       
       <div style="font-size: 1.4rem; font-weight: 800; color: #fff; margin-bottom: 4px;">
         <span id="final-score" style="color: var(--accent);">0</span> PTS
       </div>
       <div style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 12px;">
-        Timeline Length: <span id="final-streak" style="color: var(--highlight); font-weight: 700;">0</span> Cards
+        Answered Correctly: <span id="final-correct" style="color: var(--highlight); font-weight: 700;">0</span>
       </div>
       <div style="font-size: 0.75rem; color: var(--text-sub);">
         Best Record: <span id="high-score-val" style="color: #fff; font-weight: 700;">0</span> PTS
@@ -389,8 +401,8 @@
 
         if (type === 'pass') {
           osc.type = 'sine';
-          osc.frequency.setValueAtTime(440, now);
-          osc.frequency.exponentialRampToValueAtTime(880, now + 0.12);
+          osc.frequency.setValueAtTime(523.25, now); // C5
+          osc.frequency.exponentialRampToValueAtTime(783.99, now + 0.12); // G5
           gain.gain.setValueAtTime(0.12, now);
           gain.gain.linearRampToValueAtTime(0.01, now + 0.2);
           osc.start(now);
@@ -409,10 +421,11 @@
 
     // --- GAME ENGINE ---
     let pool = [];
-    let placedCards = [];
-    let currentCard = null;
+    let currentQ = null;
     let lives = 3;
     let score = 0;
+    let correctCount = 0;
+    let answered = false;
 
     function shuffle(arr) {
       const a = [...arr];
@@ -427,17 +440,11 @@
       document.getElementById('game-over-overlay').classList.remove('active');
       lives = 3;
       score = 0;
+      correctCount = 0;
       updateHeader();
 
       pool = shuffle(QUESTIONS_DB);
-      placedCards = [];
-
-      // Initial anchor card
-      const anchor = pool.pop();
-      placedCards.push(anchor);
-
-      pickCard();
-      renderTimeline();
+      nextQuestion();
     }
 
     function updateHeader() {
@@ -445,94 +452,66 @@
       document.getElementById('score-display').innerText = score + ' PTS';
     }
 
-    function pickCard() {
+    function nextQuestion() {
+      answered = false;
+      document.getElementById('trivia-box').classList.remove('active');
+      document.getElementById('next-btn').classList.remove('active');
+
       if (pool.length === 0) {
-        alert("Incredible! You completed all cards in the dry-run test deck!");
+        alert("Outstanding! You cleared all questions in the deck!");
+        showGameOver();
         return;
       }
-      currentCard = pool.pop();
-      document.getElementById('card-region').innerText = currentCard.region;
-      document.getElementById('card-cat').innerText = currentCard.category;
-      document.getElementById('card-title').innerText = currentCard.title;
-      document.getElementById('card-clue').innerText = currentCard.clue;
+
+      currentQ = pool.pop();
+      document.getElementById('q-region').innerText = currentQ.region;
+      document.getElementById('q-category').innerText = currentQ.category;
+      document.getElementById('q-text').innerText = currentQ.question;
+
+      const optsContainer = document.getElementById('options-container');
+      optsContainer.innerHTML = '';
+
+      const letters = ['A', 'B', 'C', 'D'];
+      currentQ.options.forEach((optText, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'opt-btn';
+        btn.innerHTML = `<span class="opt-letter">${letters[idx]}</span><span>${optText}</span>`;
+        btn.onclick = () => selectOption(idx);
+        optsContainer.appendChild(btn);
+      });
     }
 
-    function renderTimeline() {
-      const stream = document.getElementById('timeline-area');
-      stream.innerHTML = '';
+    function selectOption(chosenIdx) {
+      if (answered) return;
+      answered = true;
 
-      // First slot
-      stream.appendChild(createSlotBtn(0, "Before " + placedCards[0].displayValue));
+      const buttons = document.querySelectorAll('.opt-btn');
+      buttons.forEach(b => b.disabled = true);
 
-      for (let i = 0; i < placedCards.length; i++) {
-        const node = document.createElement('div');
-        node.className = 'placed-node';
-        node.innerHTML = `
-          <div class="node-header">
-            <span class="node-date">${placedCards[i].displayValue}</span>
-            <span class="node-region">${placedCards[i].region}</span>
-          </div>
-          <div class="node-title">${placedCards[i].title}</div>
-        `;
-        stream.appendChild(node);
+      const isCorrect = chosenIdx === currentQ.correct;
 
-        const slotIndex = i + 1;
-        const text = (i === placedCards.length - 1)
-          ? "After " + placedCards[i].displayValue
-          : "Between " + placedCards[i].displayValue + " & " + placedCards[i+1].displayValue;
-
-        stream.appendChild(createSlotBtn(slotIndex, text));
-      }
-    }
-
-    function createSlotBtn(index, label) {
-      const btn = document.createElement('button');
-      btn.className = 'slot-trigger';
-      // Universal downward pointing triangle arrow
-      btn.innerHTML = `<span>▼</span> ${label}`;
-      btn.onclick = () => onSelectSlot(index);
-      return btn;
-    }
-
-    function onSelectSlot(choice) {
-      const val = currentCard.value;
-      let valid = false;
-
-      if (choice === 0) {
-        valid = val <= placedCards[0].value;
-      } else if (choice === placedCards.length) {
-        valid = val >= placedCards[placedCards.length - 1].value;
-      } else {
-        valid = val >= placedCards[choice - 1].value && val <= placedCards[choice].value;
-      }
-
-      if (valid) {
+      if (isCorrect) {
         sound('pass');
-        score += 100 + (placedCards.length * 20);
-        placedCards.splice(choice, 0, currentCard);
-        updateHeader();
-        pickCard();
-        renderTimeline();
+        score += 150;
+        correctCount++;
+        buttons[chosenIdx].classList.add('correct');
       } else {
         sound('fail');
         lives--;
-        updateHeader();
+        buttons[chosenIdx].classList.add('incorrect');
+        buttons[currentQ.correct].classList.add('correct');
+      }
 
-        alert(`Timeline Error!\n\n"${currentCard.title}" took place in ${currentCard.displayValue}.`);
+      updateHeader();
 
-        let correctIdx = 0;
-        while (correctIdx < placedCards.length && placedCards[correctIdx].value < val) {
-          correctIdx++;
-        }
-        placedCards.splice(correctIdx, 0, currentCard);
+      // Show in-depth educational trivia
+      document.getElementById('trivia-text').innerText = currentQ.trivia;
+      document.getElementById('trivia-box').classList.add('active');
 
-        if (lives <= 0) {
-          showGameOver();
-          return;
-        }
-
-        pickCard();
-        renderTimeline();
+      if (lives <= 0) {
+        setTimeout(showGameOver, 1200);
+      } else {
+        document.getElementById('next-btn').classList.add('active');
       }
     }
 
@@ -542,7 +521,7 @@
         localStorage.setItem('epoch_best', score);
       }
       document.getElementById('final-score').innerText = score;
-      document.getElementById('final-streak').innerText = placedCards.length;
+      document.getElementById('final-correct').innerText = correctCount;
       document.getElementById('high-score-val').innerText = Math.max(score, best);
       document.getElementById('game-over-overlay').classList.add('active');
     }
