@@ -166,5 +166,75 @@ const QUESTIONS_DB = [
     ],
     correct: 0,
     trivia: "Classical Greek authorities like Euclid and Ptolemy had long championed 'emission theory,' arguing that vision happens because the eyes project luminous beams outward that touch external objects. Ibn al-Haytham proved mathematically and experimentally that this was impossible—pointing out that staring directly at the sun burns the retina, proving light enters the eye from outside (intromission theory).\n\nHis insistence on rigorous, repeatable dark-room experiments using camera obscuras earned him recognition as the foundational architect of the modern empirical scientific method."
+  },
+  {
+    id: "MC_013",
+    region: "East Asia",
+    category: "Inventions & Science",
+    question: "In 132 CE, Han Dynasty polymath Zhang Heng invented the world's first known seismoscope. How did the bronze device indicate the direction of a distant earthquake?",
+    options: [
+      "Water level dropped in one of four directional porcelain tubes",
+      "A pendulum triggered a dragon head to drop a bronze ball into a toad's mouth",
+      "A magnetic lodestone spoon rotated toward the seismic epicenter",
+      "Fine bell strings tuned to subterranean resonant frequencies severed"
+    ],
+    correct: 1,
+    trivia: "Zhang Heng's device, the Houfeng Didong Yi, featured an internal inverted pendulum mechanism so sensitive it could register distant tremors undetectable to people in the capital.\n\nWhen a shockwave arrived, the pendulum tilted toward the direction of the tremor, releasing a lever that dropped a bronze ball from a dragon's mouth into a bronze toad waiting below. In one famous test, the device signaled an earthquake to the northwest; court officials initially doubted it until a courier arrived days later reporting a major disaster in Longxi province 400 miles away."
+  },
+  {
+    id: "MC_014",
+    region: "South Asia",
+    category: "Metallurgy & Trade",
+    question: "Originating in southern India around 300 BCE, what high-carbon crucible steel was famously exported across the Indian Ocean and later forged into renowned 'Damascus blades'?",
+    options: [
+      "Wootz steel",
+      "Corinthian bronze",
+      "Electrum",
+      "Orichalcum"
+    ],
+    correct: 0,
+    trivia: "Pioneered in Tamil Nadu and Sri Lanka, Wootz steel was produced by sealing high-purity wrought iron, charcoal, and specific glass flux plant matter inside closed clay crucibles fired at extreme temperatures.\n\nThe resulting ingots featured high carbon content (1.5%) and microscopic carbide bands. When forged into swords by craftsmen in Damascus and the Levant, it produced blades renowned for extraordinary toughness, razor edges, and characteristic swirling water-silk patterns on their surface."
+  },
+  {
+    id: "MC_015",
+    region: "Africa",
+    category: "Epigraphy & Metallurgy",
+    question: "Before developing its distinctive cursive alphabetic script around 200 BCE, the Kingdom of Kush moved its royal capital to Meroë primarily due to what resource advantage?",
+    options: [
+      "Extensive natural salt mines along the Red Sea coast",
+      "Vast acacia timber reserves and iron ore deposits for industrial smelting",
+      "Natural subterranean emerald veins in the Ethiopian foothills",
+      "Perennial deep-water docks capable of mooring Mediterranean galleys"
+    ],
+    correct: 1,
+    trivia: "Archaeological excavations at Meroë, located in northern Sudan, have revealed enormous slag heaps produced by ancient bloomery furnaces, earning the ancient city the moniker of the 'Birmingham of Ancient Africa.'\n\nThe confluence of rich iron ore deposits and dense acacia woodlands along seasonal Nile tributaries provided abundant charcoal fuel, turning Meroë into a major industrial weapons, agricultural tool, and trading powerhouse across Central Africa and the Mediterranean."
+  },
+  {
+    id: "MC_016",
+    region: "Americas",
+    category: "Urbanism & Engineering",
+    question: "Flourishing around 3000 BCE in coastal Peru, the sacred city of Caral-Supe is recognized as the oldest known civilization center in the Americas. What remarkable feature distinguishes its urban architecture?",
+    options: [
+      "It features monumental stone pyramids and sunken circular plazas built without pottery or defensive walls",
+      "It was constructed entirely on floating reed rafts anchored to marine trenches",
+      "Homes were built out of glazed ceramic bricks fired in volcanic vents",
+      "The city was encircled by three concentric moats flooded with seawater"
+    ],
+    correct: 0,
+    trivia: "Caral developed in the arid Supe Valley around the same time Egyptian Old Kingdom pyramids were being built. Masons engineered monumental stepped platform temples and circular sunken plazas using shicra bags—woven reed nets filled with quarried stone that functioned as seismic shock absorbers during Andean earthquakes.\n\nRemarkably, extensive excavations have found zero fortifications, no defensive walls, and no weapons of war. Instead, researchers discovered 32 flutes carved from pelican and condor bones, 37 cornet trumpets, and cotton farming networks supported by maritime trade with coastal fishers."
+  },
+  {
+    id: "MC_017",
+    region: "Oceania",
+    category: "Navigation & Cartography",
+    question: "Traditional Marshallese 'stick charts' (such as mattang and rebbelib) were sophisticated navigational instruments used without compasses. What primary natural phenomena did they map?",
+    options: [
+      "The seasonal flight trajectories of migrating long-tailed cuckoos",
+      "Ocean swell reflection and refraction patterns interacting with island chains",
+      "Underwater volcanic thermal currents detected by hull vibrations",
+      "Bioluminescent plankton density shifts during lunar cycles"
+    ],
+    correct: 1,
+    trivia: "Marshallese navigators constructed these lightweight charts using bound midribs of coconut palm fronds, tied together with coconut sennit cord, and cowrie shells marking island positions.\n\nThe curved and straight wooden strips did not represent geographical distances; instead, they mapped how ocean wave swells bend, reflect, and clash when they strike hidden reefs and atolls. Skilled navigators memorized the patterns on land and lay down in the bottom of voyaging canoes at sea, sensing the wave angles directly through the hull to steer between islands over hundreds of open-ocean miles."
   }
 ];
