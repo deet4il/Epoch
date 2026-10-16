@@ -1,15 +1,17 @@
-const CACHE_NAME = 'chronotime-v1';
-const ASSETS = [
+const CACHE_NAME = 'epoch-v1.0';
+const STATIC_ASSETS = [
   './',
   './index.html',
   './questions.js',
   './manifest.json',
-  './icon-512.png'
+  './favicon.png',
+  './icon-192.png',
+  './icon-512.jpg'
 ];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(STATIC_ASSETS))
   );
   self.skipWaiting();
 });
@@ -29,8 +31,8 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      return cachedResponse || fetch(event.request);
+    caches.match(event.request).then((cached) => {
+      return cached || fetch(event.request);
     })
   );
 });
