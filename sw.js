@@ -1,4 +1,4 @@
-const CACHE_NAME = 'epoch-v4.2';
+const CACHE_NAME = 'epoch-v4.3';
 const STATIC_ASSETS = [
   './',
   './index.html',
