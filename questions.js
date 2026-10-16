@@ -627,5 +627,394 @@ const QUESTIONS_DB = [
     ],
     correct: 1,
     trivia: "Tiktaalik lived during the Late Devonian period and provides stunning morphological evidence of animals making the monumental transition from swimming in water to crawling on land. While it retained fish characteristics like scales, fins, and gills, it also possessed radical land-adapted anatomical features: a flexible neck, distinct ribs for breathing air, and lungs.\n\nCrucially, when paleontologists Neil Shubin and Ted Daeschler dissected its pectoral fin bones, they found interior shoulder, elbow, and primitive wrist bones homologous to our own arms, allowing Tiktaalik to prop its body up and crawl through shallow river shallows."
+  },
+  
+  // --- EUROPE & MEDITERRANEAN: SCIENCE, MATH & LOGIC ---
+  {
+    id: "MC_043",
+    region: "Europe",
+    category: "Linguistics & Cryptanalysis",
+    difficulty: "Advanced",
+    question: "In 1952, English architect and self-taught linguist Michael Ventris stunned classicists by deciphering Linear B tablets from Bronze Age Mycenae. What did he prove the language actually was?",
+    options: [
+      "An archaic dialect of Greek written syllabically",
+      "An extinct Minoan isolate related to Etruscan",
+      "A Northwest Semitic maritime trading pidgin",
+      "An Anatolian script borrowed from the Luwians"
+    ],
+    correct: 0,
+    trivia: "Arthur Evans, who excavated Knossos on Crete, spent decades insisting that Linear B recorded an indigenous non-Greek Minoan tongue. Working purely from home using statistical frequency grids, Ventris matched repetitive consonant-vowel syllable grids to geographic place names on Crete (like Amnisos and Knossos).\n\nHis realization that the underlying grammar was an archaic form of Greek—predating Homer’s Iliad by five centuries—pushed back the documented linguistic history of the Greek language into the 14th century BCE and completely reshaped our understanding of Mycenaean palace administrative accounting."
+  },
+  {
+    id: "MC_044",
+    region: "Europe",
+    category: "Quantum Physics",
+    difficulty: "Intermediate",
+    question: "In 1900, German physicist Max Planck resolved the long-standing 'ultraviolet catastrophe' in black-body radiation by introducing which revolutionary assumption?",
+    options: [
+      "Light moves at variable velocities depending on magnetic fields",
+      "Electromagnetic energy is emitted and absorbed only in discrete packets called quanta",
+      "Electrons collapse continuously into the atomic nucleus as radio waves",
+      "Thermal radiation requires an elastic luminiferous ether to propagate"
+    ],
+    correct: 1,
+    trivia: "Classical physics predicted that an ideal black body at thermal equilibrium would emit infinite energy at short ultraviolet wavelengths—an absurd calculation known as the ultraviolet catastrophe. In an act of mathematical desperation, Planck postulated that vibrating atomic resonators could not gain or lose energy continuously.\n\nInstead, energy could only be transferred in discrete chunks: E = hf (where h is Planck's constant and f is frequency). Though Planck initially regarded this formula merely as a mathematical trick, it laid the inescapable foundation for the entire 20th-century quantum mechanics revolution."
+  },
+  {
+    id: "MC_045",
+    region: "Mediterranean",
+    category: "Mechanical Computing",
+    difficulty: "Beginner",
+    question: "Recovered from a Roman shipwreck off the Greek coast in 1901, what was the primary operational function of the 2,100-year-old Antikythera Mechanism?",
+    options: [
+      "A navigational magnetic compass for open-sea steering",
+      "A complex geared bronze mechanical analog computer calculating astronomical cycles and eclipses",
+      "An odometer for measuring ship distance traveled using paddle wheels",
+      "A water-displacement balance for detecting adulterated gold alloys"
+    ],
+    correct: 1,
+    trivia: "Dating to roughly 150–100 BCE, the Antikythera Mechanism contained at least 30 precision bronze gears packed into a shoebox-sized wooden frame. By turning a hand crank, the user could input any calendar date to predict solar and lunar eclipses, the positions of the five known planets, and the exact timing of the ancient Olympic Games.\n\nModern micro-focus X-ray scans revealed differential gearing and epicyclic pin-and-slot mechanisms that replicated the irregular speed of the Moon's orbit (Kepler's second law in mechanical miniature), a level of mechanical sophistication not seen again in Europe until medieval clockwork towers 1,400 years later."
+  },
+  {
+    id: "MC_046",
+    region: "Europe",
+    category: "Evolutionary Biology",
+    difficulty: "Beginner",
+    question: "In his garden monastery in Brno during the 1860s, what did Gregor Mendel track through thousands of pea plant experiments to discover the fundamental laws of inheritance?",
+    options: [
+      "Discrete, non-blending dominant and recessive hereditary units",
+      "Epigenetic changes induced by soil moisture variations",
+      "Spontaneous chromosome mutations caused by solar radiation",
+      "Bacterial plasmid transfers between plant roots"
+    ],
+    correct: 0,
+    trivia: "Prevailing 19th-century dogma, including Charles Darwin's provisional theory of pangenesis, assumed that offspring traits were a blended average of their parents (like mixing red and white paint into pink). Mendel systematically crossed varieties of Pisum sativum, counting specific binary traits such as yellow vs. green seeds and smooth vs. wrinkled coats across over 28,000 plants.\n\nHe showed that traits remained separate and particulate across generations, reappearing in mathematically predictable 3:1 ratios in the F2 generation. His paper was largely ignored when published in 1866 until its independent rediscovery in 1900 birthed modern genetics."
+  },
+  {
+    id: "MC_047",
+    region: "Mediterranean",
+    category: "Mathematics & Geometry",
+    difficulty: "Intermediate",
+    question: "Around 300 BCE in Alexandria, Euclid wrote 'The Elements'. What makes this thirteen-volume treatise one of the most influential works in the history of science?",
+    options: [
+      "It introduced Hindu-Arabic numerals to Mediterranean accounting",
+      "It established the axiomatic-deductive method, deriving hundreds of propositions from just five axioms",
+      "It calculated the exact distance between the Earth and the Sun using trigonometry",
+      "It formulated algebraic notation using symbolic variables"
+    ],
+    correct: 1,
+    trivia: "Euclid did not discover all the geometry inside The Elements; rather, he organized the mathematical knowledge of his era into an airtight deductive hierarchy. Starting from just five self-evident postulates (most famously the controversial parallel postulate) and 23 definitions, Euclid logically derived 465 distinct geometric and number-theoretic proofs.\n\nFor more than two millennia, The Elements was considered the absolute pinnacle of logical rigor and deductive truth, serving as the universal textbook across the Islamic world and Europe. Only the Bible has had more editions printed since the invention of the printing press."
+  },
+
+  // --- THE AMERICAS: PHILOSOPHY, SCIENCE & URBANISM ---
+  {
+    id: "MC_048",
+    region: "Americas",
+    category: "Philosophy & Epistemology",
+    difficulty: "Advanced",
+    question: "In Aztec (Nahua) philosophical traditions recorded in texts like the Florentine Codex, what core concept defined 'Teotl'?",
+    options: [
+      "An anthropomorphic creator deity ruling from a celestial palace",
+      "A dynamic, sacred, and single continuous cosmic energy that is constantly becoming and flowing",
+      "A rigid dualistic separation between pure spirit and corrupt physical matter",
+      "An eternal nothingness that can only be reached through total silence"
+    ],
+    correct: 1,
+    trivia: "Unlike Western monotheism or Greek polytheism, Nahua tlamatinime (philosophers) viewed reality through pantheistic monism. Teotl was not an individual god who created the universe; Teotl was the universe itself—an all-encompassing, living, self-transforming cosmic energy.\n\nBecause Teotl was in constant motion (ollin), earthly life was viewed as inherently unstable, slippery, and elusive. A famous Nahua philosophical aphorism warned: 'Tlapechco in tlalticpac'—'The earth is on a narrow precipice.' Ethical duty centered on cultivating neltiliztli (rooted balance) through poetry, art, and disciplined conduct."
+  },
+  {
+    id: "MC_049",
+    region: "Americas",
+    category: "Archaeology & Earthworks",
+    difficulty: "Intermediate",
+    question: "Constructed along Bayou Maçon in Louisiana around 1700 BCE, what makes the Poverty Point earthwork complex an archaeological anomaly in North America?",
+    options: [
+      "It was a massive geometric earthwork city built entirely by foraging hunter-gatherers with no agriculture",
+      "It features stone pyramids mortared with natural petroleum pitch",
+      "It contains subterranean copper smelting blast furnaces pre-dating the Bronze Age",
+      "It was built atop a submerged wooden piling system in open saltwater marshes"
+    ],
+    correct: 0,
+    trivia: "Classical archaeology historically assumed that complex monumental architecture required sedentary agriculture (like maize farming) to generate caloric surpluses. Poverty Point completely shattered that premise.\n\nOccupying over 400 acres, indigenous hunter-fishers shifted approximately 750,000 cubic meters of earth to build six concentric C-shaped ridges and massive bird effigy mounds. The inhabitants lived entirely on wild nuts, aquatic roots, deer, and fish, while running a massive trade network that imported tons of stone, galena, and quartz from over 1,000 kilometers away."
+  },
+  {
+    id: "MC_050",
+    region: "Americas",
+    category: "Materials Science & Adornment",
+    difficulty: "Intermediate",
+    question: "Pre-Columbian metalsmiths in Colombia and Peru widely used 'tumbaga', an alloy of copper and gold. What chemical technique was used to make these objects look like pure gold?",
+    options: [
+      "Electrochemical electroplating using volcanic battery cells",
+      "Depletion gilding, using acidic plant juices to dissolve surface copper and leave pure gold",
+      "Dipping objects into boiling mercury amalgam",
+      "High-heat vapor deposition inside sealed charcoal kilns"
+    ],
+    correct: 1,
+    trivia: "Tumbaga had significant metallurgical advantages: it melted at a much lower temperature than pure copper or gold (roughly 850°C) and was significantly harder when hammered. To achieve a radiant golden exterior, indigenous artisans utilized depletion gilding (mise en couleur).\n\nAfter casting an ornament, they repeatedly heated it in an open fire to oxidize the surface copper into copper oxide, then quenched the piece in acidic baths made from oxalic plant saps and mineral salts. The acid selectively dissolved the copper oxides, leaving behind a surface layer of microscopic, brilliant pure gold that was burnished to a mirror sheen."
+  },
+  {
+    id: "MC_051",
+    region: "Americas",
+    category: "Ancient Information Science",
+    difficulty: "Beginner",
+    question: "Without a phonetic alphabet, how did the Inca Empire's administrators (quipucamayocs) record census data, tribute inventories, and army logistics across the Andes?",
+    options: [
+      "By carving pictographic glyphs on flat volcanic slate slabs",
+      "By using the Quipu—a system of color-coded spun cords and decimal knots",
+      "By painting symbolic ideograms on bark paper folded like concertinas",
+      "By burning coded notch patterns into wooden administrative batons"
+    ],
+    correct: 1,
+    trivia: "A quipu consisted of a primary horizontal cord from which hundreds of subsidiary pendent cords hung, made of dyed cotton or alpaca wool. Administrators encoded numbers using a base-10 positional system, tying single knots, long knots, and figure-eight knots at precise heights to represent units, tens, hundreds, and thousands.\n\nColor symbolism conveyed categories—for example, red cords for military forces, yellow for gold tribute, or undyed for local populations. Recent computational analyses suggest some quipus may also have recorded non-numerical phonetic narratives and genealogy."
+  },
+
+  // --- MIDDLE EAST & CENTRAL ASIA: MATHEMATICS, OPTICS & LOGIC ---
+  {
+    id: "MC_052",
+    region: "Middle East",
+    category: "Cryptanalysis & Statistics",
+    difficulty: "Intermediate",
+    question: "In 9th-century Baghdad, polymath Al-Kindi wrote the 'Manuscript on Deciphering Cryptographic Messages'. What code-breaking method did he pioneer?",
+    options: [
+      "The polyalphabetic Vigenère cipher wheel",
+      "Frequency analysis, using letter distribution counts to break substitution ciphers",
+      "Diffie-Hellman public key modulus arithmetic",
+      "Mechanical steganography using mirrored grids"
+    ],
+    correct: 1,
+    trivia: "Before Al-Kindi, monoalphabetic substitution ciphers (where every letter is replaced by another letter or symbol) were considered practically unbreakable. While studying the Quran, Al-Kindi realized that letters in any natural human language do not occur in equal proportions.\n\nHe systematically counted Arabic letter frequencies, noting which letters appeared most and least often. By comparing the letter frequencies in an encrypted text to the known frequencies of normal language, code-breakers could systematically deduce the substitutions—inventing cryptanalysis and early statistical linguistics in a single treatise."
+  },
+  {
+    id: "MC_053",
+    region: "Central Asia",
+    category: "Geodesy & Trigonometry",
+    difficulty: "Advanced",
+    question: "Around 1017 CE at Fort Nandana (in modern Pakistan), how did Persian polymath Al-Biruni calculate the circumference of the Earth to within 1% of modern satellite measurements?",
+    options: [
+      "By timing camel caravans walking between Alexandria and Mecca",
+      "By measuring the horizon dip angle from a mountain peak and applying spherical trigonometry",
+      "By tracking shadow lengths of identical obelisks at solar noon during the solstice",
+      "By calculating the exact parabolic curvature of lunar eclipse shadows on the ocean"
+    ],
+    correct: 1,
+    trivia: "Eratosthenes had famously estimated Earth's circumference in ancient Egypt by measuring shadow lengths in two distant cities simultaneously—a method that required coordinating measurements across hundreds of miles of flat desert. Al-Biruni devised a much more elegant, solo trigonometric method.\n\nFirst, he measured the height of a sheer mountain cliff using triangulation from two points in a flat plain. Then, climbing to the summit, he used an astrolabe to measure the dip angle between the horizontal line of sight and the visible dip of the sea horizon. Using trigonometric sine formulas, he calculated Earth's radius as 6,335.7 km (modern value: 6,371 km)."
+  },
+  {
+    id: "MC_054",
+    region: "Middle East",
+    category: "Medicine & Clinical Pathology",
+    difficulty: "Intermediate",
+    question: "Written by physician Al-Razi (Rhazes) around 910 CE, what landmark clinical distinction was made in 'A Treatise on the Smallpox and Measles'?",
+    options: [
+      "It proved that smallpox and measles were two entirely separate diseases with distinct symptoms",
+      "It introduced cowpox inoculation to immunize children against measles",
+      "It showed that plague was transmitted through contaminated well water rather than miasma",
+      "It documented the first microscopic identification of viral cellular structures"
+    ],
+    correct: 0,
+    trivia: "For centuries, classical Galenic medicine conflated smallpox and measles as minor variations of a single humoral disease of the blood. Working at the hospital in Baghdad, Al-Razi recorded meticulous bedside clinical observations.\n\nHe pointed out that measles causes severe back aches, persistent dry coughs, and syncope, whereas smallpox presents with violent nausea, nasal bleeding, and deep, pustular skin lesions. His monograph was translated into Latin, Greek, and English, serving for centuries as the master text on pediatric infectious diagnosis."
+  },
+
+  // --- EAST ASIA: CARTOGRAPHY, METALLURGY & MATH ---
+  {
+    id: "MC_055",
+    region: "East Asia",
+    category: "Navigation & Magnetism",
+    difficulty: "Beginner",
+    question: "Described by Song Dynasty polymath Shen Kuo in his 1086 work 'Dream Pool Essays', what crucial magnetic discovery aided mariners using compass needles?",
+    options: [
+      "Earth's magnetic pole periodically flips polarity every thousand years",
+      "Magnetic needles do not point to true geographic north, demonstrating magnetic declination",
+      "Copper wire coils can generate artificial magnetic fields from waterwheels",
+      "Submarines can shield themselves from magnetic fields using lead hulls"
+    ],
+    correct: 1,
+    trivia: "Chinese artisans had long crafted lodestone spoons (si nan) for geomancy, but by the 11th century, Song scholars refined magnetized steel needles suspended on silk threads or floated on water. Shen Kuo was the first scholar anywhere in the world to document magnetic declination.\n\nHe observed that magnetized needles point slightly east of true north, rather than true polar north, explaining that 'the magnetic needle always inclines slightly to the east and does not point directly to the south.' This revelation transformed maritime navigation across the Indian Ocean centuries before Columbus reached the Americas."
+  },
+  {
+    id: "MC_056",
+    region: "East Asia",
+    category: "Pure Mathematics",
+    difficulty: "Advanced",
+    question: "In 480 CE, Chinese mathematician Zu Chongzhi calculated the value of Pi (π) to seven decimal places (between 3.1415926 and 3.1415927). What geometric method did he use?",
+    options: [
+      "Measuring the circumference of copper rings with calibrated silk thread",
+      "Inscribing a regular 24,576-sided polygon inside a circle",
+      "Solving infinite trigonometric series formulas on an abacus",
+      "Calculating water displacement in precision circular bronze urns"
+    ],
+    correct: 1,
+    trivia: "Zu Chongzhi used the 'circle-cutting method' (geyuan shu) pioneered earlier by Liu Hui. Starting from a regular hexagon, he repeatedly doubled the number of sides—calculating the side lengths using the Pythagorean theorem and square root extraction.\n\nTo reach seven decimal places of accuracy, he had to calculate the perimeter of an inscribed regular polygon with 24,576 sides. Zu Chongzhi's fraction 355/113 (Milü) stood as the world's most accurate rational approximation of Pi for over 900 years until Persian mathematician Jamshid al-Kashi surpassed it in 1424."
+  },
+  {
+    id: "MC_057",
+    region: "East Asia",
+    category: "Early Acoustics & Musicology",
+    difficulty: "Intermediate",
+    question: "Excavated at the Neolithic site of Jiahu in Henan, China, what 9,000-year-old musical artifacts represent the oldest playable multi-note instruments ever discovered?",
+    options: [
+      "Tuned bone flutes carved from the wing bones of red-crowned cranes",
+      "Cast bronze clapperless bells with elliptical cross-sections",
+      "Hardened ceramic ocarinas tuned to pentatonic minor scales",
+      "Hollowed jade lithophones struck with wooden mallets"
+    ],
+    correct: 0,
+    trivia: "Dating to roughly 7000–6000 BCE, the Jiahu flutes were carefully carved from the ulnae (wing bones) of red-crowned cranes. When modern acoustic researchers at the Music Research Institute of Beijing tested an intact six-holed flute, they were astonished to find that it was fully playable.\n\nThe flute produced an accurate heptatonic (seven-note) scale closely matching modern Western diatonic scales, demonstrating that early agriculturalists possessed sophisticated empirical acoustic knowledge and calibrated drilling practices millennia before the Bronze Age."
+  },
+
+  // --- SOUTH ASIA: PHILOSOPHY, BOTANY & METALLURGY ---
+  {
+    id: "MC_058",
+    region: "South Asia",
+    category: "Epistemology & Logic",
+    difficulty: "Intermediate",
+    question: "In Jain philosophy, the doctrine of 'Anekantavada' is famously illustrated by the parable of the blind men and an elephant. What is its core philosophical thesis?",
+    options: [
+      "All physical objects are divine illusions without underlying reality",
+      "Truth and reality are complex and multifaceted, meaning no single human perspective can claim absolute monopoly on truth",
+      "Words possess no intrinsic meaning and should be abandoned for sensory silence",
+      "Only mathematical statements can be verified through sensory perception"
+    ],
+    correct: 1,
+    trivia: "Formulated by Mahavira in the 6th century BCE, Anekantavada ('many-sidedness') asserts that ultimate reality has infinite attributes and relationships. Because human perception is inherently limited, each observer grasps only a partial aspect of the truth—like the blind men who touch the elephant's trunk, ear, or leg and claim the animal is a snake, a fan, or a pillar.\n\nThis epistemological framework led directly to Syadvada (the logic of conditional assertion), fostering intense traditions of non-violence (ahimsa), intellectual tolerance, and multi-perspective philosophical debate across ancient South Asia."
+  },
+  {
+    id: "MC_059",
+    region: "South Asia",
+    category: "Materials Science & Corrosion",
+    difficulty: "Beginner",
+    question: "Erected during the Gupta Empire in the 5th century CE, why has the 6-ton Iron Pillar of Delhi survived out in open humid monsoon rains for 1,600 years without rusting away?",
+    options: [
+      "It was cast from a solid meteoric titanium-platinum alloy",
+      "High phosphorus content in the iron formed a microscopic protective crystalline iron-phosphate surface film",
+      "It has been coated continuously with animal fats and beeswax by temple priests",
+      "The pillar was buried in desert salt sands until the 19th century"
+    ],
+    correct: 1,
+    trivia: "Metallurgists from the Indian Institute of Technology (IIT Kanpur) discovered that ancient blacksmiths produced the pillar using high-temperature charcoal extraction without limestone flux. This left high levels of phosphorus in the wrought iron.\n\nWhen exposed to alternating dry heat and monsoon humidity, the phosphorus catalyzed the rapid formation of a passive, non-porous crystalline layer of misawite (an iron hydrogen phosphate hydrate) just 0.05 millimeters thick. This natural coating hermetically seals the core iron against atmospheric oxygen, completely preventing rust."
+  },
+  {
+    id: "MC_060",
+    region: "South Asia",
+    category: "Pure Mathematics & Calculus",
+    difficulty: "Advanced",
+    question: "Founded in the 14th century by Madhava of Sangamagrama, what major mathematical discovery did the Kerala School of Astronomy and Mathematics achieve centuries before Isaac Newton and Gottfried Leibniz?",
+    options: [
+      "The formulation of non-Euclidean spherical geometry",
+      "Infinite power series expansions for trigonometric sine, cosine, and arctangent",
+      "The invention of matrix determinants and Gaussian elimination",
+      "The proof of the four-color map theorem using permutation tables"
+    ],
+    correct: 1,
+    trivia: "Centuries before European mathematicians developed differential and integral calculus, Madhava and his Kerala school successors (including Nilakantha and Jyesthadeva in the Yuktibhasa) were computing astronomical positions that required calculating values of Pi and trigonometric functions to extreme accuracy.\n\nMadhava discovered the infinite series for arctangent (now commonly known as the Madhava-Gregory series) and infinite series for sine and cosine (the Madhava-Taylor series), using infinitesimal analysis and step-by-step limits to calculate Pi to 11 decimal places."
+  },
+
+  // --- OCEANIA & SOUTHEAST ASIA: ASTRONOMY, ENGINEERING & ETHNOBOTANY ---
+  {
+    id: "MC_061",
+    region: "Oceania",
+    category: "Celestial Wayfinding",
+    difficulty: "Beginner",
+    question: "Traditional Polynesian navigators (such as Mau Piailug) navigated thousands of miles across the Pacific without compasses or sextants using 'Star Paths'. How does this system work?",
+    options: [
+      "By memorizing the horizon rising and setting points of specific stars in dynamic star compasses",
+      "By following magnetic light fluctuations in the aurora australis",
+      "By calculating the changing parallax of Sirius during night watches",
+      "By steering toward stationary constellations that never move across the night sky"
+    ],
+    correct: 0,
+    trivia: "Polynesian wayfinders divide the circular 360-degree horizon into 32 equidistant houses (a mental star compass). Because stars rise and set at identical compass bearings throughout the year at specific latitudes, a navigator steers the canoe by aligning the vessel with stars rising along the horizon ahead or setting behind.\n\nIf clouds obscure the night sky, navigators maintain their course by reading the direction of primary ocean swells hitting the double hull, noting shifts in bird flight trajectories at dawn, and tracking phosphorescence patterns in the water."
+  },
+  {
+    id: "MC_062",
+    region: "Southeast Asia",
+    category: "Archaeology & Marine Trade",
+    difficulty: "Intermediate",
+    question: "Excavated in the Mekong Delta of Vietnam, what archaeological discovery at the Funan kingdom's port of Oc Eo proved the vast scale of 2nd-century maritime Silk Road trade?",
+    options: [
+      "Roman gold medallions of Antoninus Pius and Marcus Aurelius paired with Han Chinese bronze mirrors",
+      "Viking runic iron battle axes mixed with Indian ivory tusks",
+      "Cast Mayan jade figurines traded across trans-Pacific rafts",
+      "Ptolemaic papyrus scrolls detailing Mediterranean shipping insurance"
+    ],
+    correct: 0,
+    trivia: "Excavations begun by French archaeologist Louis Malleret in the 1940s revealed that Oc Eo was a sprawling canal-laced port city connecting the South China Sea to the Gulf of Thailand. Located at the narrow neck of the Indochinese peninsula, merchants unloaded goods to avoid the dangerous voyage around the Malacca Strait.\n\nArtifacts uncovered in its mudbrick docks included Roman gold coins bearing the portraits of Emperor Antoninus Pius (dated 152 CE), Persian glassware, Indian gemstone intaglios inscribed with Sanskrit, and Han Dynasty bronze mirrors, establishing Funan as a premier global transshipment hub."
+  },
+
+  // --- GLOBAL DEEP TIME & MODERN PHYSICS ---
+  {
+    id: "MC_063",
+    region: "Global Science",
+    category: "Geology & Astrobiology",
+    difficulty: "Advanced",
+    question: "In 1977, oceanographers aboard the submersible Alvin made a biological discovery along the Galápagos Rift that revolutionized our understanding of the origin of life. What was it?",
+    options: [
+      "Fossilized trilobites preserved in cold deep-sea methane clathrates",
+      "Thriving ecosystems around hydrothermal vents powered entirely by chemosynthesis rather than sunlight",
+      "Subterranean coral colonies photosynthesizing using infrared volcanic heat",
+      "Living bacterial colonies that incorporate arsenic into their DNA backbone"
+    ],
+    correct: 1,
+    trivia: "Until Alvin’s dive to 2,500 meters depth, all biological textbooks taught that every food web on Earth was ultimately dependent on solar energy through plant photosynthesis. When scientists illuminated the volcanic rift, they found towering mineral chimneys ('black smokers') spewing 350°C mineral-rich fluids surrounded by giant tube worms, blind shrimp, and white crabs.\n\nThese organisms were powered by sulfur-oxidizing bacteria using geothermal chemical energy (chemosynthesis) to synthesize organic matter from hydrogen sulfide, proving life can flourish in total darkness and boosting hopes of finding life inside the sub-surface oceans of moons like Europa and Enceladus."
+  },
+  {
+    id: "MC_064",
+    region: "Global Science",
+    category: "Astrophysics & Relativity",
+    difficulty: "Intermediate",
+    question: "In 1919, during a total solar eclipse observed on the island of Príncipe, what did British astronomer Arthur Eddington measure to confirm Albert Einstein's General Theory of Relativity?",
+    options: [
+      "The gravitational redshift of light leaving the surface of white dwarf stars",
+      "The gravitational bending of starlight passing near the massive edge of the Sun",
+      "The expansion rate of glowing coronal plasma during solar maximum",
+      "The quantum entanglement of photon pairs emitted during lunar occultation"
+    ],
+    correct: 1,
+    trivia: "Einstein’s 1915 General Theory of Relativity made a bold prediction: gravity is not an invisible force pulling masses, but the physical warping of spacetime by mass. Therefore, a beam of starlight passing close to the sun should bend twice as much as predicted by classical Newtonian mechanics.\n\nDuring the May 1919 solar eclipse, the Moon blocked the sun’s glare, allowing Eddington to photograph background stars in the Hyades cluster. Comparing their photographed positions to night charts taken months earlier showed the star positions had shifted by roughly 1.75 arcseconds—exactly matching Einstein’s equations and catapulting him into global fame overnight."
+  },
+  {
+    id: "MC_065",
+    region: "Europe",
+    category: "Microbiology & Medical History",
+    difficulty: "Beginner",
+    question: "In 1854, English physician John Snow mapped cholera outbreaks in London’s Soho district. How did his epidemiological map solve the epidemic and challenge prevailing medical theory?",
+    options: [
+      "By identifying that cholera was waterborne and centered on a contaminated public water pump on Broad Street",
+      "By proving that rat fleas transmitted the disease through airborne respiratory droplets",
+      "By demonstrating that bloodletting exacerbated patient dehydration mortality",
+      "By introducing the first heat-killed oral cholera vaccine to slum residents"
+    ],
+    correct: 0,
+    trivia: "The Victorian medical establishment almost universally believed in 'miasma theory'—the idea that cholera was caused by inhaling noxious foul air rising from decaying matter. During a lethal outbreak in Soho that killed over 600 people in days, Snow marked every recorded death on a street map as a bar next to the victim's house.\n\nThe cluster centered overwhelmingly around the public water handle on Broad Street. Snow convinced the local parish board to remove the pump handle, causing the outbreak to collapse. Later excavations showed that an underground cesspool was leaking directly into the pump's well, laying the cornerstone of modern epidemiology."
+  },
+  {
+    id: "MC_066",
+    region: "Global Science",
+    category: "Cosmology",
+    difficulty: "Beginner",
+    question: "In 1964, Arno Penzias and Robert Wilson accidentally discovered the Cosmic Microwave Background (CMB) using the Holmdel Horn Antenna. What did this radiation represent?",
+    options: [
+      "The residual thermal afterglow from the recombination era roughly 380,000 years after the Big Bang",
+      "Radio wave emissions from thousands of spinning millisecond pulsars",
+      "Solar wind electrons colliding with Earth's magnetosphere",
+      "Synchrotron radiation produced by gas spiraling into the center of the Milky Way"
+    ],
+    correct: 0,
+    trivia: "Penzias and Wilson were testing a sensitive horn antenna for satellite communications at Bell Labs when they picked up a persistent, uniform radio hiss coming from every single direction in the sky, day and night. After cleaning pigeon droppings from the antenna and ruling out military interference, they consulted astrophysicists at Princeton.\n\nThey realized they had detected the cooled residual light released when the early universe cooled to roughly 3,000 Kelvin, allowing electrons and protons to form neutral hydrogen atoms and letting trapped photons travel freely through space for the first time. This discovery provided decisive observational proof of the Big Bang over the rival Steady State model."
+  },
+  {
+    id: "MC_067",
+    region: "Americas",
+    category: "Evolutionary Genetics",
+    difficulty: "Intermediate",
+    question: "Phytolith and microfossil genetic analyses in the Balsas River Valley of Mexico proved that modern high-yield maize (corn) was selectively domesticated from what tiny wild ancestor grass?",
+    options: [
+      "Teosinte",
+      "Wild sorghum",
+      "Amaranth",
+      "Millet"
+    ],
+    correct: 0,
+    trivia: "Wild teosinte looks nothing like a modern corn cob: it is a bushy grass that produces small seed spikes containing only 5 to 12 tiny, rock-hard grains encased in an impenetrable stony fruitcase. Starting roughly 9,000 years ago, indigenous Mexican farmers recognized and selectively propagated rare mutations in teosinte.\n\nOver centuries of careful seed selection, they transformed a single gene (tb1) to eliminate side branching, and another (tga1) to strip away the hard outer casing, transforming an unpalatable wild grass into the most productive, carbohydrate-dense grain crop on planet Earth."
   }
 ];
