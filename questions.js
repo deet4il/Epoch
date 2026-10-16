@@ -1016,5 +1016,396 @@ const QUESTIONS_DB = [
     ],
     correct: 0,
     trivia: "Wild teosinte looks nothing like a modern corn cob: it is a bushy grass that produces small seed spikes containing only 5 to 12 tiny, rock-hard grains encased in an impenetrable stony fruitcase. Starting roughly 9,000 years ago, indigenous Mexican farmers recognized and selectively propagated rare mutations in teosinte.\n\nOver centuries of careful seed selection, they transformed a single gene (tb1) to eliminate side branching, and another (tga1) to strip away the hard outer casing, transforming an unpalatable wild grass into the most productive, carbohydrate-dense grain crop on planet Earth."
+  },
+  
+  // --- PHILOSOPHY, LOGIC & EPISTEMOLOGY ---
+  {
+    id: "MC_068",
+    region: "East Asia",
+    category: "Philosophy & Skepticism",
+    difficulty: "Beginner",
+    question: "In the foundational Daoist text Zhuangzi, what famous parable is used to illustrate the relativity of subjective experience and waking reality?",
+    options: [
+      "The man who lost his horse on the frontier border",
+      "The philosopher dreaming he was a butterfly without knowing he was Zhuang Zhou",
+      "The butcher Cook Ding carving an ox along natural empty spaces",
+      "The frog living at the bottom of a collapsed well refusing the vast ocean"
+    ],
+    correct: 1,
+    trivia: "In the inner chapters of the Zhuangzi (written in the 4th century BCE), Zhuang Zhou relates waking up from a dream in which he fluttered joyfully as a butterfly, having no awareness of being human. Upon waking, he found himself solidly Zhuang Zhou once again.\n\nHe then posed the enduring epistemological riddle: was he a man who dreamed he was a butterfly, or is he now a butterfly dreaming he is a man? This parable challenges rigid anthropocentric certainty and introduces Daoist transformation of things (wùhuà)."
+  },
+  {
+    id: "MC_069",
+    region: "Mediterranean",
+    category: "Philosophy of Science",
+    difficulty: "Intermediate",
+    question: "In 6th-century BCE Miletus (Ionia), what radical paradigm shift did Thales initiate that led Aristotle to consider him the first natural philosopher?",
+    options: [
+      "He proposed naturalistic, physical hypotheses to explain natural events instead of attributing them to mythological gods",
+      "He invented formal geometric proofs to establish land boundaries along the Nile",
+      "He introduced atomism, arguing that matter is composed of indivisible particles",
+      "He wrote the first legal constitution establishing judicial trials by jury"
+    ],
+    correct: 0,
+    trivia: "Before Thales, ancient cultures explained physical phenomena—such as earthquakes, ocean tides, and lightning—as direct interventions by capricious deities (like Poseidon shaking the earth). Thales broke away from mythopoetic explanations by arguing that nature operates through inherent internal laws.\n\nHe proposed that water is the fundamental underlying substance (arche) of the cosmos, correctly predicting a solar eclipse in 585 BCE. While his specific material hypothesis was incomplete, his insistence on physical hypotheses subject to empirical observation founded Western natural philosophy."
+  },
+  {
+    id: "MC_070",
+    region: "Africa",
+    category: "Ethics & Moral Philosophy",
+    difficulty: "Beginner",
+    question: "Found across Bantu-speaking traditions in Southern and Central Africa, what core principle is expressed by the ethical philosophy of 'Ubuntu' (or Unhu)?",
+    options: [
+      "Individual enlightenment achieved through solitary ascetic meditation in nature",
+      "'A person is a person through other persons'—humanity is realized through relational interconnectedness",
+      "Strict legal obedience to divine kingship as the guarantor of cosmic equilibrium",
+      "The pursuit of spiritual detachment from all physical possessions and ancestral lineage"
+    ],
+    correct: 1,
+    trivia: "Derived from the Nguni proverb 'Umuntu ngumuntu ngabantu', Ubuntu represents a humanist communal ethics. Unlike Cartesian individualism ('I think, therefore I am'), Ubuntu posits that individual identity, dignity, and morality exist only within reciprocal community relationships.\n\nPracticing Ubuntu entails hospitality, restorative rather than retributive justice, and mutual responsibility. This philosophy was famously integrated into post-apartheid South Africa’s Truth and Reconciliation Commission by figures like Desmond Tutu and Nelson Mandela to emphasize social healing over revenge."
+  },
+
+  // --- COMPUTER SCIENCE, AUTOMATA & MATHEMATICS ---
+  {
+    id: "MC_071",
+    region: "Europe",
+    category: "Theoretical Computer Science",
+    difficulty: "Intermediate",
+    question: "In his landmark 1936 paper, English mathematician Alan Turing formulated an abstract theoretical machine to answer which fundamental mathematical question?",
+    options: [
+      "The exact value of the gravitational constant inside atomic nuclei",
+      "David Hilbert's Entscheidungsproblem (the decision problem regarding algorithmic decidability)",
+      "The maximum data throughput possible over transatlantic copper telegraph cables",
+      "The prime number distribution across the Riemann zeta function"
+    ],
+    correct: 1,
+    trivia: "Hilbert asked whether there could exist a universal mechanical procedure (algorithm) that could decide the truth or falsehood of any mathematical statement. To address this, Turing imagined an abstract device: an infinite paper tape divided into squares, read and modified by a scanning head following a finite table of instructions.\n\nBy formalizing this 'Universal Turing Machine,' Turing proved the negative: there exist mathematically well-defined problems (most famously the Halting Problem) that no algorithmic computer can ever solve, inadvertently defining the theoretical architecture of modern programmable digital computers."
+  },
+  {
+    id: "MC_072",
+    region: "Europe",
+    category: "Computing & Early Programming",
+    difficulty: "Beginner",
+    question: "In 1843, Ada Lovelace wrote extensive notes on Charles Babbage's proposed Analytical Engine. Why is she celebrated as the world's first computer programmer?",
+    options: [
+      "She soldered the first thermionic vacuum tubes used in digital calculating machines",
+      "She published an algorithm designed to be carried out by the machine to compute Bernoulli numbers",
+      "She constructed a magnetic-core memory drum out of woven copper wires",
+      "She designed the mechanical punch-card loom for weaving complex floral silk ribbons"
+    ],
+    correct: 1,
+    trivia: "While translating a French transcript of Babbage's lectures, Lovelace appended 'Note G,' which was triple the length of the original text. In it, she drafted a step-by-step instruction table specifying memory stores, operation cycles, and conditional branching to calculate Bernoulli numbers mechanically.\n\nMore profoundly, while Babbage saw his machine merely as a high-speed calculator for numerical tables, Lovelace envisioned that if information like music, pitch, or graphics could be expressed symbolically, the engine could manipulate symbols to compose music or generate art—anticipating universal computing a century early."
+  },
+  {
+    id: "MC_073",
+    region: "Americas",
+    category: "Information Theory",
+    difficulty: "Intermediate",
+    question: "Published in 1948 by Bell Labs mathematician Claude Shannon, 'A Mathematical Theory of Communication' laid the bedrock of the digital age by defining what fundamental concept?",
+    options: [
+      "The physical transistor gate threshold for silicon semiconductors",
+      "The bit (binary digit) as the fundamental unit of information, quantified through entropy",
+      "The packet-switching protocol used to route signals over ARPANET",
+      "The floating-point standard used by microprocessors for decimal arithmetic"
+    ],
+    correct: 1,
+    trivia: "Shannon stripped communication of its physical medium—whether voice, text, radio waves, or voltage spikes—by treating information as the measurable reduction of uncertainty. He adopted the word 'bit' (coined by John Tukey) to quantify this binary choice (0 or 1).\n\nShannon proved the Noisy-Channel Coding Theorem: any communication channel has a maximum theoretical data transmission limit (channel capacity). As long as transmission rates stay below this limit, error-correcting codes can transmit data across noisy telephone lines or deep-space radio links with virtually zero error."
+  },
+
+  // --- CHEMISTRY, PHARMACOLOGY & MATERIALS SCIENCE ---
+  {
+    id: "MC_074",
+    region: "Europe",
+    category: "Organic Chemistry",
+    difficulty: "Intermediate",
+    question: "In 1865, German chemist August Kekulé proposed the cyclical ring structure of benzene (C6H6). According to his accounts, what striking vision inspired this breakthrough?",
+    options: [
+      "A dream of an ouroboros—a serpent seizing its own tail in a whirling circle",
+      "Watching smoke rings rise from an extinguished candle in his laboratory",
+      "Looking at the hexagonal symmetry of microscopic ice crystals on a windowpane",
+      "Observing six children dancing in an interlocking ring in a Munich town square"
+    ],
+    correct: 0,
+    trivia: "Determining how six carbon atoms could bond with only six hydrogen atoms was the central puzzle of 19th-century organic chemistry, as typical carbon valencies formed straight open chains. Kekulé described dozing by his fireplace and seeing carbon atoms dance and twist before his eyes.\n\nOne chain seized its own tail and whirled mockingly, sparking his realization that benzene formed a closed hexagonal carbon ring with alternating double and single bonds. This planar ring structure explained aromatic stability and founded modern synthetic organic chemistry, dyes, and pharmaceuticals."
+  },
+  {
+    id: "MC_075",
+    region: "Europe",
+    category: "Pharmacology & Microbiology",
+    difficulty: "Beginner",
+    question: "In 1928, Scottish bacteriologist Alexander Fleming returned from vacation to discover that an accidental mold contamination in his laboratory had done what?",
+    options: [
+      "Fermented glucose broth into pure industrial ethyl alcohol",
+      "Killed and lysed surrounding colonies of Staphylococcus aureus bacteria on a petri dish",
+      "Mutated harmless soil microbes into lethal anthrax spores",
+      "Accelerated the crystal growth of synthetic aspirin compounds"
+    ],
+    correct: 1,
+    trivia: "Fleming had left culture plates of Staphylococcus bacteria stacked on a laboratory bench before leaving on holiday. Upon returning, he noticed that a blue-green mold spore (Penicillium notatum) had blown in through an open window and contaminated an uncovered plate.\n\nCrucially, Fleming observed a transparent halo of dead bacteria directly around the mold colony, deducing that the fungus secreted an antibacterial agent that destroyed bacterial cell walls without damaging human cells. Purified a decade later by Howard Florey and Ernst Chain, penicillin transformed medicine, saving tens of millions of lives."
+  },
+  {
+    id: "MC_076",
+    region: "Americas",
+    category: "Materials Science & Polymers",
+    difficulty: "Intermediate",
+    question: "Long before European vulcanization was patented in the 1840s, how did Olmec and Maya artisans in Mesoamerica chemically stabilize raw rubber latex into elastic balls and sandals?",
+    options: [
+      "By boiling latex with crushed limestone and animal tallow",
+      "By blending raw latex sap with juice squeezed from morning glory vines (Ipomoea alba)",
+      "By smoking raw rubber over burning sulfur-rich volcanic vents",
+      "By curing latex sheets under heavy salt presses in arid desert caves"
+    ],
+    correct: 1,
+    trivia: "Raw sap collected from the rubber tree (Castilla elastica) is a sticky, brittle emulsion that decomposes rapidly in heat. Chemical analyses of rubber balls found at the sacred Olmec site of El Manatí (dating to 1600 BCE) showed that indigenous artisans mastered polymer chemistry millennia ahead of their time.\n\nThey discovered that mixing raw latex with alkaline sulfur compounds naturally present in the crushed juice of the morning glory vine cross-linked the polymer chains. By altering the ratio of vine juice to latex, they could manufacture pliable bouncing balls for the sacred ballgame, resilient waterproof shoe soles, or tough hafting bands."
+  },
+
+  // --- GEOPHYSICS, CLIMATOLOGY & OCEANOGRAPHY ---
+  {
+    id: "MC_077",
+    region: "Europe",
+    category: "Geophysics & Plate Tectonics",
+    difficulty: "Intermediate",
+    question: "In 1912, German meteorologist Alfred Wegener published his hypothesis of continental drift. What primary geological mechanism was he unable to explain, causing his theory to be initially rejected?",
+    options: [
+      "How matching fossil species appeared on continents separated by wide oceans",
+      "The physical convective driving force capable of plowing solid continents across the seafloor",
+      "Why glacial striations existed in equatorial regions of India and Africa",
+      "How oceanic basalt layers differed chemically from continental granite crust"
+    ],
+    correct: 1,
+    trivia: "Wegener compiled remarkable empirical evidence for his supercontinent Pangaea: the interlocking jigsaw fit of South America and Africa, identical fossil deposits of the freshwater reptile Mesosaurus across continents, and matching geological strata spanning the Atlantic. However, geologists dismissed him because he suggested continents plowed through ocean floor like icebreakers.\n\nIt was not until the 1960s—when Marie Tharp mapped the Mid-Atlantic Ridge, discovering seafloor spreading driven by mantle convection currents—that plate tectonics became the unifying foundation of modern earth science."
+  },
+  {
+    id: "MC_078",
+    region: "Americas",
+    category: "Atmospheric Science & Geochemistry",
+    difficulty: "Beginner",
+    question: "Beginning in 1958 at the Mauna Loa Observatory in Hawaii, what did geochemist Charles David Keeling begin measuring that provided the first incontrovertible proof of human-driven climate change?",
+    options: [
+      "The annual depletion of stratospheric ozone layers over the South Pole",
+      "The relentless rise of atmospheric carbon dioxide concentrations (the Keeling Curve)",
+      "The concentration of sulfur dioxide droplets released by submarine volcanoes",
+      "The acidification rate of deep-water Pacific ocean currents"
+    ],
+    correct: 1,
+    trivia: "Before Keeling's work, scientists hypothesized that global oceans and forests absorbed virtually all excess industrial carbon dioxide emissions. Keeling built ultra-precise infrared gas analyzers and placed them high on the volcanic slopes of Mauna Loa, far from local industrial smoke.\n\nHis continuous graph revealed two critical realities: a seasonal 'sawtooth' oscillation as Northern Hemisphere forests breathe in CO2 during spring and exhale it in autumn, superimposed on a relentless, year-after-year upward climb from 315 parts per million in 1958 to over 420 ppm today, confirming that human fossil fuel combustion is altering the global atmosphere."
+  },
+  {
+    id: "MC_079",
+    region: "Africa",
+    category: "Paleoclimatology & Geology",
+    difficulty: "Advanced",
+    question: "Sediment cores from the Atlantic Ocean revealed that between 14,500 and 5,000 years ago, North Africa underwent the 'African Humid Period'. What was the primary environmental state of the Sahara at that time?",
+    options: [
+      "A frozen, glaciated plateau covered in permafrost and mammoth steppe",
+      "A green savanna covered in expansive freshwater lakes, grasslands, and river systems",
+      "An inland hypersaline sea isolated from the Mediterranean by salt dunes",
+      "A hyper-arid volcanic desert hotter and drier than the modern Sahara"
+    ],
+    correct: 1,
+    trivia: "Earth's 23,000-year orbital precession cycle shifted the summer solstice closer to the Sun during the early Holocene, intensifying the West African monsoon. Rains swept across North Africa, turning the Sahara into a lush landscape of grasslands, river corridors, and vast freshwater mega-lakes—including Mega-Lake Chad, which was larger than the modern Caspian Sea.\n\nRock art murals at Tassili n'Ajjer in Algeria document pastoralist communities herding cattle, swimming in clear lakes, and hunting hippos, crocodiles, and giraffes in areas that are now scorched, waterless dunes."
+  },
+
+  // --- ANTHROPOLOGY, ARCHAEOLOGY & ANCIENT ENGINEERING ---
+  {
+    id: "MC_080",
+    region: "Oceania",
+    category: "Experimental Archaeology",
+    difficulty: "Intermediate",
+    question: "Recent engineering and experimental archaeological research by Terry Hunt and Carl Lipo demonstrated that the massive monolithic Moai statues on Rapa Nui (Easter Island) were transported from quarries by:",
+    options: [
+      "Rolling them face-down over thousands of imported hardwood palm tree logs",
+      "'Walking' them upright using three-rope pulling teams that rocked the statues rhythmically side to side",
+      "Floating them along coastal lava trenches flooded with buoyant seawater",
+      "Sliding them across greased basalt paving stones using trained draft animals"
+    ],
+    correct: 1,
+    trivia: "Oral tradition on Rapa Nui had long insisted that the moai 'walked' to their ceremonial platforms (ahu). While early European theorists assumed Islanders decimated forests to create wooden log rollers, Hunt and Lipo noticed that road-transit moai had wider, forward-leaning bases and rounded bellies engineered for an upright center of gravity.\n\nBy attaching three ropes to the statue's head—one pulling forward and two steadying the sides—a team of just 18 people could rock a multi-ton replica back and forth, walking it forward at 100 meters per hour with zero timber rollers, matching the indigenous oral history."
+  },
+  {
+    id: "MC_081",
+    region: "Americas",
+    category: "Archaeological Acoustics",
+    difficulty: "Advanced",
+    question: "Constructed around 900 BCE in the Peruvian highlands, how did the subterranean stone galleries of Chavín de Huántar utilize hydraulic acoustic engineering?",
+    options: [
+      "Underground canals were engineered to channel river water through stone baffles, creating a roaring acoustic resonance that sounded like jaguars",
+      "Subterranean pipes concentrated thermal steam to produce high-pitched siren whistles",
+      "Granite chambers were shaped like elliptical parabolas to amplify whisper networks between priests",
+      "Cascading water wheels struck bronze chimes to track seasonal solstice schedules"
+    ],
+    correct: 0,
+    trivia: "Stanford researchers using acoustic mapping discovered that the ceremonial underground labyrinth at Chavín de Huántar was an early acoustic architecture laboratory. Canals diverted the roaring Mosna River directly through stone conduits beneath the temple floor where initiates stood in total darkness before the smiling Lanzón monolith.\n\nThe rushing water produced low-frequency infrasound and acoustic vibrations that vibrated in human chest cavities, imitating the terrifying roar of jaguars. When combined with marine conch trumpet blasts (pututus) and psychotropic San Pedro cactus ceremonies, the acoustic engineering disoriented initiates during spiritual rites."
+  },
+  {
+    id: "MC_082",
+    region: "South Asia",
+    category: "Hydraulic Architecture",
+    difficulty: "Beginner",
+    question: "Built across arid western India from the 6th century onward (such as Rani ki Vav in Gujarat), what was the dual function of a 'stepwell' (baoli)?",
+    options: [
+      "A deep subterranean rainwater reservoir accessible via stepped terraces that also functioned as a cool civic sanctuary",
+      "A gravity-fed elevator system designed to transport royal elephants down to river level",
+      "A multi-tiered filtration pit packed with charcoal to distill mineral salts for gunpowder",
+      "A flood-control drainage funnel designed to sink excess monsoon water into volcanic caverns"
+    ],
+    correct: 0,
+    trivia: "In arid regions of Gujarat and Rajasthan, groundwater tables fluctuate drastically between monsoon downpours and blistering summer droughts. Indian architects engineered stepwells: multi-story subterranean temples dug up to nine levels into the earth, lined with intricate carved stone columns, pavilions, and descending staircases.\n\nAs water levels rose and fell, women could descend to the water level at any time of year. Because the deep underground stone stayed up to 10°C cooler than the scorching surface air, stepwells served as civic community centers where travelers, women, and pilgrims escaped the heat."
+  },
+  {
+    id: "MC_083",
+    region: "Middle East",
+    category: "Civil Engineering & Materials",
+    difficulty: "Intermediate",
+    question: "Built around 540 CE near modern Baghdad, the Taq Kasra (Arch of Ctesiphon) stands as a monument of Sasanian architecture because it holds what world record?",
+    options: [
+      "The oldest surviving dome built from volcanic pozzolanic concrete",
+      "The largest single-span unreinforced parabolic brick vault in the world",
+      "The earliest known architectural arch reinforced with forged wrought-iron rebar",
+      "The highest surviving brick minaret constructed with an internal spiral counterweight"
+    ],
+    correct: 1,
+    trivia: "The great banquet hall of the Persian Sasanian kings at Ctesiphon features a colossal parabolic barrel vault spanning over 25 meters (84 feet) wide and rising 37 meters (120 feet) into the air. What astounds structural engineers is that it was built without centering timber scaffolding during construction and without any interior metal reinforcement.\n\nPersian masons laid sun-baked mud bricks at an inclined slant against a back wall rather than horizontally, using fast-drying gypsum mortar. This allowed each successive brick course to support itself through parabolic compression, surviving centuries of weathering and warfare."
+  },
+
+  // --- ASTRONOMY, OPTICS & SENSORY SCIENCE ---
+  {
+    id: "MC_084",
+    region: "East Asia",
+    category: "Historical Astronomy",
+    difficulty: "Beginner",
+    question: "In July 1054 CE, court astronomers of the Song Dynasty recorded a brilliant 'Guest Star' in the constellation Taurus visible in broad daylight for 23 days. What was this celestial event?",
+    options: [
+      "The perihelion passage of Halley's Comet through inner orbit",
+      "A core-collapse supernova explosion that created the Crab Nebula (SN 1054)",
+      "A massive solar coronal mass ejection triggering daytime auroral displays",
+      "The collision of two asteroids in the asteroid belt shedding reflective dust"
+    ],
+    correct: 1,
+    trivia: "Song court imperial astrologers recorded meticulous dates and coordinates for this celestial apparition, noting it appeared in the morning sky shining brighter than Venus and remained visible in daylight for over three weeks before fading over two years. Ancestral Puebloan artists in Chaco Canyon and Arab physicians also documented the flash.\n\nCenturies later, when modern astronomers turned telescopes toward the exact coordinates recorded by the Song scribes, they found the Crab Nebula: an expanding cloud of stellar debris centered on a rapidly spinning neutron star (pulsar) rotating 30 times per second."
+  },
+  {
+    id: "MC_085",
+    region: "Europe",
+    category: "Microbiology & Optics",
+    difficulty: "Beginner",
+    question: "In 1665, English natural philosopher Robert Hooke published 'Micrographia'. What foundational biological term did he coin while examining thin slices of cork under his microscope?",
+    options: [
+      "Organelle",
+      "Cell",
+      "Tissue",
+      "Membrane"
+    ],
+    correct: 1,
+    trivia: "Micrographia was an international publishing sensation, featuring fold-out copperplate engravings of fleas, lice, and razor blade edges magnified up to 50 times under compound microscopes. While examining thin shavings of bottle cork, Hooke observed porous rectangular compartments filled with air.\n\nHe noted that they resembled the small living rooms or bedrooms inhabited by Christian monks in a monastery, which were called 'cellula' in Latin. Hooke coined the term 'cell' for these structures, establishing the terminology for cellular biology."
+  },
+  {
+    id: "MC_086",
+    region: "Americas",
+    category: "Archaeoastronomy",
+    difficulty: "Intermediate",
+    question: "Constructed at Chichén Itzá in Yucatán, Mexico, why is the circular stone tower known as 'El Caracol' renowned in astronomical history?",
+    options: [
+      "Its viewing slits and horizontal alignments specifically tracked the extreme northern and southern horizons of the planet Venus",
+      "It contained a massive reflecting pool lined with liquid mercury to track constellations",
+      "It was built atop a submerged freshwater cenote that mirrored Polaris during the winter solstice",
+      "It aligned strictly with the magnetic pole rather than the solar equinoxes"
+    ],
+    correct: 0,
+    trivia: "The round, shell-like dome of El Caracol (named 'the snail' by the Spanish due to its internal spiral staircase) was a specialized astronomical observatory. Maya astronomers placed immense religious and military importance on the synodic cycle of Venus (Chak Ek'), the 584-day cycle associated with the god Kukulcán and warfare.\n\nArchaeologists Anthony Aveni and Horst Hartung measured the tower's stone viewing windows and platform orientations, discovering that 20 out of 29 architectural sightlines aligned with astronomical events, including the extreme horizon rising and setting points of Venus at its 8-year maximums."
+  },
+
+  // --- GENETICS, EVOLUTION & NEUROBIOLOGY ---
+  {
+    id: "MC_087",
+    region: "Europe",
+    category: "Molecular Biology",
+    difficulty: "Intermediate",
+    question: "In 1952, physical chemist Rosalind Franklin produced 'Photo 51' using X-ray crystallography. What critical structural parameter of DNA did this image reveal?",
+    options: [
+      "The triple-stranded polypeptide backbone linked by iron bonds",
+      "The distinct X-shaped diffraction pattern of an anti-parallel double helix with phosphate backbones on the outside",
+      "The covalent bonding mechanism between adenine and thymine",
+      "The left-handed helical rotation characteristic of Z-DNA"
+    ],
+    correct: 1,
+    trivia: "At King's College London, Franklin spent months perfecting the hydration of DNA fibers, producing an X-ray diffraction photograph of the B-form of DNA after a 100-hour exposure. The characteristic X-shaped cross pattern mathematically indicated a helical structure, while the missing fourth diamond layer revealed that two sugar-phosphate chains wound in opposite directions (antiparallel).\n\nWhen Maurice Wilkins showed Photo 51 to James Watson without Franklin’s knowledge or consent, Watson immediately recognized the helical geometry, allowing him and Francis Crick to model the double helix and deduce the base-pairing mechanism of genetic inheritance."
+  },
+  {
+    id: "MC_088",
+    region: "Europe",
+    category: "Neuroscience",
+    difficulty: "Advanced",
+    question: "In the 1890s, Spanish neuroscientist Santiago Ramón y Cajal overturned prevailing scientific dogma by establishing the 'Neuron Doctrine'. What did he prove?",
+    options: [
+      "The nervous system is an uninterrupted, continuous physical web of fused cytoplasmic fibers (reticular theory)",
+      "The nervous system is composed of discrete, individual cells (neurons) that communicate across microscopic gaps",
+      "Electrical impulses in nerves are generated exclusively by hydraulic fluid pressure through hollow sheaths",
+      "Brain tissue cannot regenerate or form new synaptic pathways after embryonic development"
+    ],
+    correct: 1,
+    trivia: "Camillo Golgi had championed the reticular theory, believing the brain was a single continuous physical meshwork. Cajal modified Golgi's silver nitrate staining method (which stained only 1% of brain cells, making individual cells visible) and produced thousands of hand-drawn histological illustrations of brain tissue.\n\nCajal observed that the tips of axons and dendrites did not physically fuse; rather, each neuron remained an anatomically independent cellular unit that passed signals across microscopic gaps (later named synapses by Charles Sherrington), establishing the foundation of modern neuroscience."
+  },
+
+  // --- ANCIENT ECONOMIES, LAW & MARITIME TRADE ---
+  {
+    id: "MC_089",
+    region: "Middle East",
+    category: "Ancient Law & Economics",
+    difficulty: "Beginner",
+    question: "Carved onto a 2.25-meter black diorite stele around 1754 BCE, what famous legal concept is embodied in the Code of Hammurabi?",
+    options: [
+      "The presumption of innocence until guilt is established by mathematical certainty",
+      "Lex talionis—the law of retaliatory justice ('an eye for an eye, a tooth for a tooth')",
+      "The complete abolition of all private debts every seven years through royal pardon",
+      "Trial by combat between accused citizens before city elders"
+    ],
+    correct: 1,
+    trivia: "Commissioned by Hammurabi, the sixth Amorite king of Babylon, the basalt monument stands as one of the oldest deciphered legal codes in human history, containing 282 edicts regulating trade, wages, property, marital rights, and surgical malpractice.\n\nWhile famous for proportional retribution (lex talionis), the code was socially stratified: penalties for injuring a noble citizen were far more severe than injuring a commoner or enslaved person. However, it also pioneered early consumer protection, mandating that if a builder constructed a house that collapsed and killed the owner, the builder was put to death."
+  },
+  {
+    id: "MC_090",
+    region: "East Asia",
+    category: "Economic History",
+    difficulty: "Intermediate",
+    question: "During the 11th century Song Dynasty in China, what financial breakthrough emerged that transformed global economic systems?",
+    options: [
+      "The world's first government-issued fiat paper currency (Jiaozi)",
+      "The establishment of decentralized joint-stock maritime insurance corporations",
+      "The replacement of copper coinage with standardized silver bullion bars",
+      "The introduction of compound interest loans issued by Buddhist monasteries"
+    ],
+    correct: 0,
+    trivia: "As trade exploded along the Grand Canal and Silk Road, merchants found transport of stringed copper coins (which weighed dozens of pounds for ordinary wholesale transactions) cumbersome and dangerous. Merchants in Sichuan originally issued private deposit receipts on Mulberry bark paper called Jiaozi.\n\nRecognizing its economic power, the Song government nationalized the system in 1024 CE, producing state-backed paper currency with official seals, anti-counterfeiting ink designs, and fixed redemption values—introducing paper banknotes centuries before European banking families adopted them in Sweden and Italy."
+  },
+  {
+    id: "MC_091",
+    region: "Africa",
+    category: "Numismatics & Global Trade",
+    difficulty: "Intermediate",
+    question: "During the 11th to 14th centuries, what small marine shell harvested in the Indian Ocean served as a universal, non-counterfeitable currency across West Africa?",
+    options: [
+      "Abalone shells",
+      "Cowrie shells (Monetaria moneta)",
+      "Nautilus shells",
+      "Conch shells"
+    ],
+    correct: 1,
+    trivia: "Harvested primarily in the warm waters around the Maldive Islands in the Indian Ocean, cowrie shells were transported by Arab dhows to North Africa and carried across the Sahara by camel caravans into the empires of Ghana, Mali, and Songhai. Because they could not be forged, were uniform in size and weight, and were impossible to gather locally in inland Africa, they functioned as an ideal small-denomination currency.\n\nCowries were used for daily marketplace transactions—purchasing grain, livestock, pottery, and textiles—and became symbols of fertility, wealth, and spiritual power across West African cultural regalia."
+  },
+  {
+    id: "MC_092",
+    region: "Southeast Asia",
+    category: "Maritime Navigation & Shipbuilding",
+    difficulty: "Intermediate",
+    question: "Dating back to 320 CE in Mindanao, the Balangay boats of Butuan were constructed using what advanced indigenous Southeast Asian shipbuilding method?",
+    options: [
+      "Hollowing out single gigantic mahogany logs without internal frames",
+      "Edge-pegging wooden planks using hardwood dowels and fiber lashing without a single iron nail",
+      "Steam-bending birch bark over flexible whalebone rib cages",
+      "Riveting overlap clinker iron plates sealed with volcanic pitch"
+    ],
+    correct: 1,
+    trivia: "Excavated near Butuan City, these large wooden voyaging vessels (up to 15 meters long) demonstrated the sophisticated maritime technology of Austronesian boatbuilders. Planks were carved with protruding raised lugs on their inner faces and joined edge-to-edge using wooden dowels carved from resilient hardwood.\n\nPlanks were then bound tightly to internal ribs using flexible sugar-palm fibers (gomuti) and caulked with natural resins. This edge-pegged, lashed-lug construction gave the hull extraordinary flexibility in heavy ocean swells, allowing Butuan traders to sail directly to Song Dynasty China and Champa without metal fasteners."
   }
 ];
