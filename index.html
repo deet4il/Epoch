@@ -211,6 +211,11 @@
       transition: background 0.12s ease, transform 0.12s ease;
     }
 
+    .slot-trigger span {
+      font-size: 0.7rem;
+      transform: translateY(1px);
+    }
+
     .slot-trigger:active {
       background: var(--highlight);
       color: #080c14;
@@ -485,7 +490,8 @@
     function createSlotBtn(index, label) {
       const btn = document.createElement('button');
       btn.className = 'slot-trigger';
-      btn.innerHTML = `<span>⏷</span> ${label}`;
+      // Uses standard universal unicode triangle arrow compatible with all Android devices
+      btn.innerHTML = `<span>▼</span> ${label}`;
       btn.onclick = () => onSelectSlot(index);
       return btn;
     }
