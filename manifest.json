@@ -1,7 +1,7 @@
 {
   "name": "Epoch: Global Timeline",
   "short_name": "Epoch",
-  "description": "A minimalist, de-centered global chronology and science ordering game. Created by DCA.",
+  "description": "A minimalist, de-centered global chronology puzzle game. Created by DCA.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
