@@ -15,14 +15,12 @@
   <style>
     :root {
       --bg: #080c14;
-      --surface: #0f172a;
       --card-bg: #141e33;
       --border: #1e293b;
       --border-bright: #334155;
       --accent: #facc15;
       --accent-dim: rgba(250, 204, 21, 0.12);
       --highlight: #38bdf8;
-      --success: #10b981;
       --danger: #f43f5e;
       --text-main: #f8fafc;
       --text-sub: #94a3b8;
@@ -375,7 +373,7 @@
   <script src="./questions.js"></script>
 
   <script>
-    // --- SYNTHESIZED SOUNDS (Zero External Network Latency) ---
+    // --- SYNTHESIZED SOUNDS ---
     const AudioCtx = window.AudioContext || window.webkitAudioContext;
     let audio = null;
 
@@ -449,7 +447,7 @@
 
     function pickCard() {
       if (pool.length === 0) {
-        alert("Incredible! You completed all cards in the question bank!");
+        alert("Incredible! You completed all cards in the dry-run test deck!");
         return;
       }
       currentCard = pool.pop();
@@ -490,7 +488,7 @@
     function createSlotBtn(index, label) {
       const btn = document.createElement('button');
       btn.className = 'slot-trigger';
-      // Uses standard universal unicode triangle arrow compatible with all Android devices
+      // Universal downward pointing triangle arrow
       btn.innerHTML = `<span>▼</span> ${label}`;
       btn.onclick = () => onSelectSlot(index);
       return btn;
