@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Chronotime: Global Timeline</title>
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#0f172a">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.25);
+      --success: #10b981;
+      --danger: #ef4444;
+      --text-main: #f8fafc;
+      --text-sub: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      user-select: none;
+      -webkit-user-select: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+      padding-bottom: 24px;
+    }
+
+    header {
+      background-color: #0f172a;
+      border-bottom: 1px solid var(--card-border);
+      padding: 14px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .title-group h1 {
+      font-size: 1.15rem;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .stats {
+      display: flex;
+      gap: 16px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .lives-box {
+      color: var(--danger);
+      letter-spacing: 2px;
+    }
+
+    .score-box {
+      color: #facc15;
+    }
+
+    /* Incoming Card Section */
+    .draw-section {
+      padding: 16px;
+      background: radial-gradient(circle at 50% 0%, #1e293b 0%, #090d16 85%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 1px dashed var(--card-border);
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-sub);
+      margin-bottom: 10px;
+    }
+
+    .active-card {
+      background-color: var(--card-bg);
+      border: 2px solid var(--accent);
+      box-shadow: 0 8px 24px var(--accent-glow);
+      border-radius: 12px;
+      padding: 16px;
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+      animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .badge-row {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background-color: #334155;
+      color: var(--text-sub);
+    }
+
+    .active-card h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+
+    .active-card p {
+      font-size: 0.85rem;
+      color: var(--text-sub);
+      line-height: 1.4;
+    }
+
+    /* Timeline Scroll Area */
+    .timeline-container {
+      flex: 1;
+      padding: 20px 16px;
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Slot Target Buttons */
+    .slot-btn {
+      width: 100%;
+      max-width: 320px;
+      background: rgba(56, 189, 248, 0.06);
+      border: 1.5px dashed var(--accent);
+      color: var(--accent);
+      padding: 10px 16px;
+      margin: 6px 0;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .slot-btn:active {
+      background-color: var(--accent);
+      color: #0f172a;
+      transform: scale(0.98);
+    }
+
+    /* Placed Cards */
+    .placed-card {
+      background-color: #111827;
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      width: 100%;
+      max-width: 440px;
+      position: relative;
+    }
+
+    .placed-card .year-badge {
+      display: inline-block;
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    .placed-card h3 {
+      font-size: 0.95rem;
+      color: #e2e8f0;
+      font-weight: 600;
+    }
+
+    /* Game Over Modal */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      z-index: 100;
+    }
+
+    .overlay.active {
+      display: flex;
+    }
+
+    .modal {
+      background: #1e293b;
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 24px;
+      max-width: 380px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .modal h2 {
+      color: var(--danger);
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+
+    .btn-restart {
+      background: var(--accent);
+      color: #090d16;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 700;
+      margin-top: 18px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    @keyframes popIn {
+      0% { opacity: 0; transform: scale(0.92); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="title-group">
+      <h1>Chronotime</h1>
+    </div>
+    <div class="stats">
+      <div class="lives-box" id="lives-display">❤️❤️❤️</div>
+      <div class="score-box" id="score-display">0 pts</div>
+    </div>
+  </header>
+
+  <div class="draw-section">
+    <div class="section-label">Place this milestone</div>
+    <div class="active-card" id="active-card-container">
+      <div class="badge-row">
+        <span class="badge" id="card-region">Region</span>
+        <span class="badge" id="card-cat">Category</span>
+      </div>
+      <h2 id="card-title">Milestone Title</h2>
+      <p id="card-clue">Milestone Clue</p>
+    </div>
+  </div>
+
+  <div class="timeline-container" id="timeline-area">
+    <!-- Placement slots and cards generated here -->
+  </div>
+
+  <div class="overlay" id="game-over-overlay">
+    <div class="modal">
+      <h2>Timeline Fractured</h2>
+      <p style="color: var(--text-sub); margin-bottom: 12px;">You made 3 chronological errors.</p>
+      <div style="font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 6px;">
+        Final Score: <span id="final-score" style="color: #facc15;">0</span>
+      </div>
+      <div style="font-size: 0.9rem; color: var(--text-sub);">
+        Timeline Length: <span id="final-streak" style="color: var(--accent);">0</span> cards
+      </div>
+      <button class="btn-restart" onclick="initGame()">Play Again</button>
+    </div>
+  </div>
+
+  <!-- Load the structured question bank -->
+  <script src="./questions.js"></script>
+
+  <script>
+    // --- AUDIO SYNTHESIS ENGINE (Zero external sound files needed) ---
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    let audioCtx = null;
+
+    function playTone(type) {
+      try {
+        if (!audioCtx) audioCtx = new AudioContext();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+
+        const now = audioCtx.currentTime;
+        if (type === 'success') {
+          osc.frequency.setValueAtTime(523.25, now); // C5
+          osc.frequency.exponentialRampToValueAtTime(783.99, now + 0.15); // G5
+          gain.gain.setValueAtTime(0.12, now);
+          gain.gain.linearRampToValueAtTime(0.01, now + 0.25);
+          osc.start(now);
+          osc.stop(now + 0.25);
+        } else if (type === 'error') {
+          osc.type = 'sawtooth';
+          osc.frequency.setValueAtTime(180, now);
+          osc.frequency.linearRampToValueAtTime(110, now + 0.25);
+          gain.gain.setValueAtTime(0.2, now);
+          gain.gain.linearRampToValueAtTime(0.01, now + 0.3);
+          osc.start(now);
+          osc.stop(now + 0.3);
+        }
+      } catch (e) {
+        // Fallback for strict browser autoplay
+      }
+    }
+
+    // --- GAME ENGINE STATE ---
+    let pool = [];
+    let placedCards = [];
+    let currentCard = null;
+    let lives = 3;
+    let score = 0;
+
+    function shuffle(arr) {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    function initGame() {
+      document.getElementById('game-over-overlay').classList.remove('active');
+      lives = 3;
+      score = 0;
+      updateUIStats();
+
+      // Copy and shuffle question dataset
+      pool = shuffle(QUESTIONS_DB);
+      placedCards = [];
+
+      // Seed first anchor card directly onto the timeline
+      const anchor = pool.pop();
+      placedCards.push(anchor);
+
+      drawNextCard();
+      renderTimeline();
+    }
+
+    function updateUIStats() {
+      document.getElementById('lives-display').innerText = '❤️'.repeat(Math.max(0, lives));
+      document.getElementById('score-display').innerText = score + ' pts';
+    }
+
+    function drawNextCard() {
+      if (pool.length === 0) {
+        alert("Incredible! You cleared all milestones in the question bank!");
+        return;
+      }
+      currentCard = pool.pop();
+      document.getElementById('card-region').innerText = currentCard.region;
+      document.getElementById('card-cat').innerText = currentCard.category;
+      document.getElementById('card-title').innerText = currentCard.title;
+      document.getElementById('card-clue').innerText = currentCard.clue;
+    }
+
+    function renderTimeline() {
+      const container = document.getElementById('timeline-area');
+      container.innerHTML = '';
+
+      // Slot 0 (Before first card)
+      container.appendChild(createSlotBtn(0, "Before " + placedCards[0].displayValue));
+
+      for (let i = 0; i < placedCards.length; i++) {
+        // Placed Card
+        const cardEl = document.createElement('div');
+        cardEl.className = 'placed-card';
+        cardEl.innerHTML = `
+          <div class="year-badge">${placedCards[i].displayValue}</div>
+          <h3>${placedCards[i].title}</h3>
+        `;
+        container.appendChild(cardEl);
+
+        // Gap Button or After Button
+        const slotIdx = i + 1;
+        const label = (i === placedCards.length - 1)
+          ? "After " + placedCards[i].displayValue
+          : "Between " + placedCards[i].displayValue + " and " + placedCards[i+1].displayValue;
+
+        container.appendChild(createSlotBtn(slotIdx, label));
+      }
+    }
+
+    function createSlotBtn(index, label) {
+      const btn = document.createElement('button');
+      btn.className = 'slot-btn';
+      btn.innerHTML = `<span>⏷</span> ${label}`;
+      btn.onclick = () => handlePlacement(index);
+      return btn;
+    }
+
+    function handlePlacement(chosenIndex) {
+      // Find valid slot indices for currentCard.value
+      // We check where currentCard could legally fit chronologically
+      let valid = false;
+      const val = currentCard.value;
+
+      if (chosenIndex === 0) {
+        valid = val <= placedCards[0].value;
+      } else if (chosenIndex === placedCards.length) {
+        valid = val >= placedCards[placedCards.length - 1].value;
+      } else {
+        valid = val >= placedCards[chosenIndex - 1].value && val <= placedCards[chosenIndex].value;
+      }
+
+      if (valid) {
+        playTone('success');
+        score += 100 + (placedCards.length * 15);
+        placedCards.splice(chosenIndex, 0, currentCard);
+        updateUIStats();
+        drawNextCard();
+        renderTimeline();
+      } else {
+        playTone('error');
+        lives--;
+        updateUIStats();
+
+        // Reveal correct date to player
+        alert(`Incorrect placement!\n\n"${currentCard.title}" occurred in ${currentCard.displayValue}.`);
+
+        // Insert card into its correct sorted position regardless
+        let correctIdx = 0;
+        while (correctIdx < placedCards.length && placedCards[correctIdx].value < val) {
+          correctIdx++;
+        }
+        placedCards.splice(correctIdx, 0, currentCard);
+
+        if (lives <= 0) {
+          triggerGameOver();
+          return;
+        }
+
+        drawNextCard();
+        renderTimeline();
+      }
+    }
+
+    function triggerGameOver() {
+      document.getElementById('final-score').innerText = score;
+      document.getElementById('final-streak').innerText = placedCards.length;
+      document.getElementById('game-over-overlay').classList.add('active');
+    }
+
+    // Register Service Worker for offline play
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').catch(() => {});
+      });
+    }
+
+    // Start game on load
+    window.addEventListener('DOMContentLoaded', initGame);
+  </script>
+</body>
+</html>
