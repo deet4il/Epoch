@@ -1407,5 +1407,398 @@ const QUESTIONS_DB = [
     ],
     correct: 1,
     trivia: "Excavated near Butuan City, these large wooden voyaging vessels (up to 15 meters long) demonstrated the sophisticated maritime technology of Austronesian boatbuilders. Planks were carved with protruding raised lugs on their inner faces and joined edge-to-edge using wooden dowels carved from resilient hardwood.\n\nPlanks were then bound tightly to internal ribs using flexible sugar-palm fibers (gomuti) and caulked with natural resins. This edge-pegged, lashed-lug construction gave the hull extraordinary flexibility in heavy ocean swells, allowing Butuan traders to sail directly to Song Dynasty China and Champa without metal fasteners."
+  },
+  
+  // --- POP CULTURE, VIDEO GAME HISTORY & MODERN MEDIA ---
+  {
+    id: "MC_093",
+    region: "East Asia",
+    category: "Pop Culture & Gaming",
+    difficulty: "Beginner",
+    question: "When Satoshi Tajiri conceived the original Pokémon Red and Green games for the Nintendo Game Boy in the early 1990s, what real-world childhood hobby inspired the core mechanic?",
+    options: [
+      "Collecting and trading postage stamps from different prefectures",
+      "Catching, identifying, and observing live insects in rural ponds and forests",
+      "Breeding prize-winning fighting beetles for school tournaments",
+      "Sketching stray neighborhood cats in Tokyo alleys"
+    ],
+    correct: 1,
+    trivia: "Growing up in Machida (then a rural suburb of Tokyo), Tajiri was nicknamed 'Dr. Bug' by peers because of his obsession with exploring ponds, overturning rotting logs, and finding rare insects to preserve in jars.\n\nAs Tokyo expanded and natural habitats were paved over with concrete, Tajiri noticed children playing exclusively indoors. When he saw two Game Boys connected via the newly invented Game Link Cable, he envisioned creatures crawling along the wire between screens, creating a digital way for kids to experience the thrill of collecting and trading living specimens."
+  },
+  {
+    id: "MC_094",
+    region: "Americas",
+    category: "Cinema & Audio Engineering",
+    difficulty: "Intermediate",
+    question: "For the 1977 release of Star Wars, sound designer Ben Burtt crafted the iconic hum of the lightsaber using what unusual combination of everyday equipment?",
+    options: [
+      "A buzzing fluorescent desk lamp mixed with a bowed violin string",
+      "An idling 35mm film projector motor blended with the interference buzz from an unshielded television picture tube",
+      "A blender motor recorded underwater inside an acoustic tank",
+      "A low-frequency synthesizer oscillator passed through a hollow plastic sewer conduit"
+    ],
+    correct: 1,
+    trivia: "While working as a projectionist at USC, Burtt noticed that the twin interlock motors of a Simplex 35mm film projector emitted a pleasant, idling metallic drone. To make it sound alive, he paired it with the electrical buzz produced by an unshielded cathode-ray television tube.\n\nTo create the swinging whoosh effect heard when lightsabers clash or slice through air, Burtt played the combined hum over a loudspeaker and waved a shotgun microphone past the speaker cone, capturing real physical Doppler shift in real time."
+  },
+  {
+    id: "MC_095",
+    region: "East Asia",
+    category: "Animation & Cinema",
+    difficulty: "Intermediate",
+    question: "In Studio Ghibli's 2001 anime masterpiece Spirited Away, director Hayao Miyazaki based the central bathhouse (Aburaya) on what traditional Japanese institution?",
+    options: [
+      "Edo-period samurai sword-forging guilds",
+      "Traditional communal sento (public bathhouses) and hot spring onsen inns",
+      "Imperial Kyoto royal tea ceremony pavilions",
+      "Feudal rice-storage storehouses along merchant canals"
+    ],
+    correct: 1,
+    trivia: "Miyazaki frequented nostalgic public bathhouses (sento) since his youth, fascinated by the communal, egalitarian steam rooms where social rank dissolved. In Spirited Away, the bathhouse serves as a restorative retreat where weary Japanese kami (nature spirits) wash away the physical filth of modern industrial pollution.\n\nThe famous scene where Chihiro cleanses a foul 'Stink Spirit'—which turns out to be a polluted river god choked with discarded bicycle handles, tires, and scrap metal—was directly inspired by Miyazaki's personal volunteer work dredging real urban rivers in Tokyo."
+  },
+  {
+    id: "MC_096",
+    region: "Americas",
+    category: "Pop Culture & Music",
+    difficulty: "Beginner",
+    question: "In August 1973, DJ Kool Herc hosted a back-to-school party at 1520 Sedgwick Avenue in the Bronx that is widely recognized as the birth of Hip Hop. What turntablism technique did he pioneer?",
+    options: [
+      "The 'Merry-Go-Round' technique, switching between two copies of the same record to loop the percussive drum break",
+      "Rewinding vinyl records backward across the magnetic pickup needle to create vinyl scratching",
+      "Connecting an electronic drum machine directly to a telephone amplifier",
+      "Speeding up 33 RPM vocal tracks to 45 RPM to simulate female backing choirs"
+    ],
+    correct: 0,
+    trivia: "Jamaican-born Clive Campbell (DJ Kool Herc) noticed that dance crowds at parties erupted with the highest energy not during melodic vocal verses, but during short, 15-second instrumental drum breaks (such as the break in James Brown's 'Give It Up or Turnit a Loose').\n\nUsing two turntables and an audio mixer, Herc played two identical copies of the same vinyl record. Just as the break was ending on turntable one, he switched the fader to turntable two where the break began, extending a 10-second drum section into five minutes of continuous rhythm, providing the sonic playground for breakdancers (b-boys) and emcees."
+  },
+
+  // --- MYTHOLOGY, FOLKLORE & LITERARY TRADITIONS ---
+  {
+    id: "MC_097",
+    region: "Southeast Asia",
+    category: "Folklore & Mythology",
+    difficulty: "Intermediate",
+    question: "In Philippine indigenous mythology (particularly in Tagalog and Visayan traditions), what is the 'Bakunawa'?",
+    options: [
+      "A benevolent woodland protector who guides lost hunters using luminous fireflies",
+      "A colossal serpentine sea dragon believed to swallow the Moon, causing lunar eclipses",
+      "A subterranean spirit who guards buried gold jars beneath bamboo groves",
+      "A shape-shifting trickster monkey who outwits crocodiles along riverbanks"
+    ],
+    correct: 1,
+    trivia: "The Bakunawa was depicted as a colossal serpent with a mouth the size of a lake, a red tongue, and whiskers, dwelling in the ocean depths. Ancient Visayans believed there were originally seven radiant moons illuminating the night sky, but the beauty of the moons captivated the Bakunawa, who rose from the ocean to devour them one by one.\n\nWhen a lunar eclipse occurred, villagers rushed outdoors beating metal gongs, stamping bamboo tubes, and banging kitchen pots to create an uproar loud enough to startle the Bakunawa into regurgitating the final remaining Moon."
+  },
+  {
+    id: "MC_098",
+    region: "Middle East",
+    category: "Literature & Epic Poetry",
+    difficulty: "Beginner",
+    question: "In the Epic of Gilgamesh, recorded on clay tablets in ancient Mesopotamia, what wild man is created by the gods to rival Gilgamesh before becoming his closest friend?",
+    options: [
+      "Enkidu",
+      "Utnapishtim",
+      "Humbaba",
+      "Urshanabi"
+    ],
+    correct: 0,
+    trivia: "Enkidu was formed from pinched clay by the goddess Aruru to humble the arrogant king of Uruk, living wild among gazelles and grazing on grasslands. After being civilized by the priestess Shamhat, Enkidu traveled to Uruk, challenging Gilgamesh to an earth-shattering wrestling match in a doorway.\n\nThe contest ended in mutual admiration and deep brotherhood. Enkidu's subsequent tragic illness and death plunged Gilgamesh into existential grief, prompting his epic quest across the waters of death to seek the secret of eternal life from the deluge survivor Utnapishtim."
+  },
+  {
+    id: "MC_099",
+    region: "Americas",
+    category: "Indigenous Mythology & Literature",
+    difficulty: "Intermediate",
+    question: "In the Popol Vuh (the sacred creation narrative of the K'iche' Maya), what divine test do the Hero Twins, Hunahpu and Xbalanque, overcome in the underworld of Xibalba?",
+    options: [
+      "They survive subterranean trial chambers—including the Dark House, Razor House, and Bat House—using wit and blowguns",
+      "They paddle a raft across an ocean of boiling pitch without wetting their oars",
+      "They harvest three golden maize stalks guarded by a two-headed feathered serpent",
+      "They decode an astronomical calendar carved onto an underwater limestone cave ceiling"
+    ],
+    correct: 0,
+    trivia: "The lords of Xibalba (the watery underworld of disease and decay) summoned the Hero Twins to compete in a series of lethal ballgames and endure deadly ordeal houses. In the Dark House, they were given a lit torch and cigars with orders to keep them burning all night without consuming them; they outwitted the lords by attaching fireflies to the tips.\n\nAfter tricking the lords into letting themselves be beheaded in an underworld resurrection illusion, the Twins defeated the death lords, avenged their father, and ascended to the sky to become the Sun and the full Moon."
+  },
+
+  // --- LINGUISTICS & CODE CRACKING ---
+  {
+    id: "MC_100",
+    region: "Americas",
+    category: "Linguistics & Military History",
+    difficulty: "Beginner",
+    question: "During World War II in the Pacific Theater, why was the code developed by the U.S. Marine Corps Navajo Code Talkers impossible for Japanese cryptanalysts to break?",
+    options: [
+      "It relied on mechanical rotor cipher machines with 26 daily key changes",
+      "It utilized an unwritten, tonally complex Athabaskan language layered with improvised metaphorical military vocabulary",
+      "It converted English sentences into high-speed mathematical Morse pulses",
+      "It substituted words with visual smoke signals transmitted by ship lookouts"
+    ],
+    correct: 1,
+    trivia: "The Navajo language (Diné bizaad) had no written alphabet, was spoken by virtually no non-Navajo individuals outside the American Southwest, and possessed an intricate grammatical structure where verbs convey information about shape, texture, and motion.\n\nCode talkers developed a two-tier cipher: words were spelled phonetically using English words translated into Navajo (e.g., 'A' was 'wol-la-chee' for ant), while military terminology used natural metaphors—a submarine was a 'besh-lo' (iron fish), a tank was a 'chay-da-gahi' (tortoise), and fighter planes were 'da-he-tih-hi' (hummingbirds). It remains one of the few spoken military ciphers in modern warfare never cracked."
+  },
+  {
+    id: "MC_101",
+    region: "Africa",
+    category: "Linguistics & Typography",
+    difficulty: "Advanced",
+    question: "Invented around 1896 by Sultan Ibrahim Njoya of the Bamum Kingdom in Cameroon, what makes the Bamum script (Shü-mom) an extraordinary linguistic milestone?",
+    options: [
+      "It evolved within two decades from a 500-glyph pictographic script into a streamlined 70-character phonetic syllabary",
+      "It was designed exclusively to encode royal accounting numbers in base-16 hexadecimal",
+      "It was cast using hot lead type borrowed directly from Portuguese missionaries",
+      "It was the first African writing system read vertically from bottom to top"
+    ],
+    correct: 0,
+    trivia: "Recognizing that neighboring powers preserved history in books while Bamum lore remained oral, King Njoya instructed his royal council to draft a new script. The earliest iteration (1896) was composed of 510 complex pictograms and ideograms.\n\nOver the next twenty years, Njoya refined the writing through seven distinct iterations—gradually pruning semantic pictures and transforming the script into a streamlined 70-character syllabic alphabet. He built schools, cast metal printing type, and commissioned a 1,100-page history of his kingdom before French colonial administrators banned the script in the 1930s."
+  },
+
+  // --- NATURAL SCIENCES, BOTANY & ANIMAL BEHAVIOR ---
+  {
+    id: "MC_102",
+    region: "Global Science",
+    category: "Ethology & Animal Cognition",
+    difficulty: "Intermediate",
+    question: "In 1973, Austrian zoologist Karl von Frisch received the Nobel Prize for decoding the 'waggle dance' of European honeybees. What precise spatial data does this dance communicate?",
+    options: [
+      "The chemical sugar concentration of nectar through rhythmic buzzing pitch",
+      "The direction and distance of a food source relative to the sun's position and gravity",
+      "The impending arrival of predator wasps based on antenna vibration rates",
+      "The moisture level of nearby freshwater sources through wing-fanning humidity"
+    ],
+    correct: 1,
+    trivia: "Inside a pitch-black vertical hive, a successful foraging scout communicates the exact location of a flower patch by running in a figure-eight pattern, performing a vibrating 'waggle run' along the central line. The angle of the waggle run relative to vertical gravity matches the angle of the flowers relative to the horizontal azimuth of the sun.\n\nThe duration of the waggle run communicates distance—roughly one second of waggle indicates approximately one kilometer of flight distance—representing one of the few symbolic, non-primate abstract communication languages discovered in the animal kingdom."
+  },
+  {
+    id: "MC_103",
+    region: "Americas",
+    category: "Botany & Evolutionary Ecology",
+    difficulty: "Intermediate",
+    question: "Why do wild chili peppers (genus Capsicum) produce capsaicin, the chemical compound responsible for the sensation of intense burning heat?",
+    options: [
+      "To accelerate seed germination in sun-scorched desert sand",
+      "To deter mammalian herbivores with sensitive teeth while allowing non-sensitive birds to eat the fruit and disperse seeds",
+      "To attract nocturnal pollinator bats that feed on spicy aromatic blooms",
+      "To sterilize soil around the plant roots against competing fungal weeds"
+    ],
+    correct: 1,
+    trivia: "Mammals have TRPV1 pain receptors in their mouths that bind to capsaicin, triggering an artificial sensation of scalding heat, and mammalian molars crush and destroy the delicate pepper seeds during chewing. In contrast, birds completely lack the TRPV1 receptor sensitivity, feeling zero heat when eating peppers.\n\nFurthermore, bird digestive tracts leave the seeds entirely unharmed, passing them through their droppings along with natural fertilizer over miles of flight. Capsaicin also functions as a powerful natural antifungal agent, protecting seeds against Fusarium mold."
+  },
+  {
+    id: "MC_104",
+    region: "Global Science",
+    category: "Neurobiology & Memory",
+    difficulty: "Advanced",
+    question: "In the 1950s, patient Henry Molaison (famous in psychology as 'Patient H.M.') underwent bilateral removal of his medial temporal lobes to treat epilepsy. What did his resulting amnesia prove?",
+    options: [
+      "The brain stores all sensory memories in the prefrontal cortex rather than temporal lobes",
+      "Declarative memory (conscious recall of facts and events) relies on the hippocampus, while procedural memory (motor skills) uses distinct neural circuits",
+      "Long-term memory is transferred between hemispheres exclusively during REM dream sleep",
+      "The human brain cannot generate new electrical synapses after childhood trauma"
+    ],
+    correct: 1,
+    trivia: "Following surgery in 1953, H.M. suffered severe anterograde amnesia: he could no longer convert new daily experiences or names into long-term conscious memory, living in a permanent present window of roughly 30 seconds. Yet psychologist Brenda Milner discovered something extraordinary.\n\nWhen asked to draw a star while looking only at its reflection in a mirror, H.M. practiced daily and improved dramatically at the difficult motor task, despite having zero conscious recollection of ever seeing the star or meeting Milner before. This proved that conscious declarative memory and subconscious motor skill learning reside in distinct anatomical brain regions."
+  },
+
+  // --- ARCHITECTURE, URBAN DESIGN & HISTORIC LANDMARKS ---
+  {
+    id: "MC_105",
+    region: "Europe",
+    category: "Architecture & Structural Engineering",
+    difficulty: "Intermediate",
+    question: "Constructed in Rome around 125 CE under Emperor Hadrian, the Pantheon still holds what architectural world record?",
+    options: [
+      "The tallest stone masonry clock tower surviving from antiquity",
+      "The world's largest unreinforced concrete dome",
+      "The deepest subterranean amphitheater hypogeum ever excavated",
+      "The earliest surviving double-shelled marble dome supported by flying buttresses"
+    ],
+    correct: 1,
+    trivia: "Spanning 43.3 meters (142 feet) in diameter, the dome of the Pantheon has stood for nearly two millennia without collapsing. Roman engineers achieved this by progressively lightening the concrete mixture (pozzolana mixed with lime) as the dome ascended.\n\nNear the foundation, dense basalt rock was used as aggregate; halfway up, lighter volcanic tufa was mixed in; and near the top, lightweight porous volcanic pumice was used. The dome also features sunken decorative ceiling coffers that reduce deadweight and a central 9-meter open hole (the oculus) that eliminates structural mass from the dome's crown."
+  },
+  {
+    id: "MC_106",
+    region: "Middle East",
+    category: "Islamic Architecture & Geometry",
+    difficulty: "Advanced",
+    question: "Found in medieval Islamic tilework (such as the 1453 Darb-i Imam shrine in Isfahan), what sophisticated mathematical pattern did physicists discover in 'Girih' tiles in 2007?",
+    options: [
+      "Fractal Mandelbrot sets modeled using hydraulic wax casting",
+      "Quasi-crystalline Penrose tilings that exhibit 5-fold and 10-fold rotational symmetry without repeating periodically",
+      "Hyperbolic geometric curves anticipating non-Euclidean Poincaré disks",
+      "Binary logic matrices calculating astronomical planetary conjunctions"
+    ],
+    correct: 1,
+    trivia: "In the 1970s, British mathematician Roger Penrose proved that an infinite two-dimensional plane could be tiled with 5-fold rotational symmetry without ever repeating periodically, a concept thought impossible under classical crystallography. In 2007, physicists Peter Lu and Paul Steinhardt made a startling discovery.\n\nMedieval Islamic master builders had discovered this principle 500 years earlier using a set of five geometric tiles (a decagon, pentagon, diamond, bow tie, and hexagon) adorned with decorative lines called Girih. By fitting these tiles together, artisans created complex, self-similar quasi-crystalline patterns with zero mathematical distortion."
+  },
+  {
+    id: "MC_107",
+    region: "South Asia",
+    category: "Rock-Cut Architecture",
+    difficulty: "Intermediate",
+    question: "Commissioned by Rashtrakuta King Krishna I in the 8th century CE, why is Cave 16 (the Kailasa Temple) at Ellora considered a marvel of monolithic sculpture?",
+    options: [
+      "It was carved top-down out of a single volcanic basalt cliff, excavating over 200,000 tons of rock",
+      "It was assembled from modular granite pillars joined by melted lead dowels",
+      "It was excavated beneath an active river that was temporarily dammed using timber sluices",
+      "Its sanctum was carved out of translucent white alabaster quarried in the Himalayas"
+    ],
+    correct: 0,
+    trivia: "Unlike conventional temples built by hauling stone blocks from quarries, the Kailasa Temple was constructed top-down out of the vertical face of the Charanandri hills. Masons started at the summit of the basalt cliff, chiseling a giant U-shaped trench into the rock to isolate a central monolith, and then carved ornate tiered roofs, elephant sculptures, and pillared halls downward.\n\nBecause masons could never add stone if they made an error with a chisel, every single pillar, window, and dynamic relief panel had to be pre-planned with absolute geometric precision before the rock surrounding it was carved away."
+  },
+
+  // --- MUSICOLOGY & ACOUSTIC INVENTIONS ---
+  {
+    id: "MC_108",
+    region: "Europe",
+    category: "Music Theory & Mathematics",
+    difficulty: "Beginner",
+    question: "According to ancient accounts, what acoustic relationship did Pythagoras discover while listening to blacksmiths hammering hot iron on anvils?",
+    options: [
+      "Musical pitch is determined by atmospheric air moisture and hammer temperature",
+      "Musical intervals correspond to simple whole-number mathematical ratios of vibrating string lengths",
+      "Sound waves bounce off stone walls at angles equal to light reflection",
+      "The human ear can detect ultrasonic frequencies above 20,000 Hertz"
+    ],
+    correct: 1,
+    trivia: "Pythagoras observed that hammers of different weights produced harmonic ringing tones. Experimenting on a monochord (a single-stringed instrument with a movable bridge), he discovered that pressing the string exactly in half (a 2:1 ratio) produced an octave; stopping it at two-thirds its length (3:2) produced a perfect fifth; and three-fourths (4:3) yielded a perfect fourth.\n\nThis revelation—that the subjective aesthetic beauty of musical harmony is governed by clean, rational arithmetic ratios—convinced the Pythagoreans that the universe itself was composed of number and musical harmony ('Harmony of the Spheres')."
+  },
+  {
+    id: "MC_109",
+    region: "Americas",
+    category: "Acoustics & Mesoamerican Archaeology",
+    difficulty: "Intermediate",
+    question: "When a person claps their hands at the base of the staircase of the El Castillo pyramid at Chichén Itzá, what acoustic phenomenon occurs?",
+    options: [
+      "The echo reverberates through hollow chambers to sound like the chirping squawk of a resplendent quetzal bird",
+      "A deep infrasound boom causes the temple platform to physically vibrate",
+      "The sound is focused into a whisper gallery carrying voices across the Great Ballcourt",
+      "The sound waves extinguish ceremonial oil torches along the upper balustrade"
+    ],
+    correct: 0,
+    trivia: "Studied by acoustic engineer David Lubman, the clap-echo of El Castillo (the Temple of Kukulcán) is caused by chirped diffraction. When a sharp clap occurs at the base, sound waves strike the edges of the high, narrow limestone stair risers in succession.\n\nBecause the stair steps are spaced regularly, the reflected sound waves from higher steps return to the listener's ear with a progressive frequency drop (from roughly 1,500 Hz down to 900 Hz). The resulting descending frequency chirp mimics the exact acoustic call of the Pharomachrus mocinno (quetzal bird), a sacred feathered messenger in Maya religion."
+  },
+
+  // --- GEOGRAPHY, CARTOGRAPHY & ANCIENT TRADE ---
+  {
+    id: "MC_110",
+    region: "North Africa",
+    category: "Cartography & Geodesy",
+    difficulty: "Beginner",
+    question: "Around 240 BCE in Hellenistic Egypt, how did chief librarian Eratosthenes calculate the circumference of the Earth without leaving Alexandria?",
+    options: [
+      "By timing the travel speed of Greek triremes sailing between Rhodes and Alexandria",
+      "By comparing the noon shadow cast by an obelisk in Alexandria with a shadowless well in Syene (Aswan) on the summer solstice",
+      "By measuring the angle of Polaris above the horizon during a lunar eclipse",
+      "By tracking the curvature of camel caravan routes across the western Libyan desert"
+    ],
+    correct: 1,
+    trivia: "Eratosthenes knew that on the summer solstice at noon in Syene (modern Aswan), the sun was directly overhead, illuminating the bottom of a deep well with zero shadow. In Alexandria, roughly 800 kilometers north, he measured the shadow cast by a vertical gnomon rod at the exact same moment, finding the sun was tilted by 7.2 degrees (or 1/50th of a full 360-degree circle).\n\nMultiplying the distance between the two cities by 50, he calculated Earth's circumference at approximately 250,000 stadia—within 2% to 15% of the modern polar circumference of 40,007 kilometers, confirming Earth's spherical shape with simple geometry."
+  },
+  {
+    id: "MC_111",
+    region: "Middle East",
+    category: "Medieval Geography",
+    difficulty: "Intermediate",
+    question: "Completed in 1154 for King Roger II of Sicily, what makes the 'Tabula Rogeriana' created by Arab geographer Muhammad al-Idrisi a masterpiece of medieval cartography?",
+    options: [
+      "It mapped trade routes using compass bearings oriented with South at the top and integrated empirical travel accounts",
+      "It was the first map to delineate the coastlines of Antarctica and Australia",
+      "It relied on Mercator projection equations to calculate Great Circle shipping courses",
+      "It was engraved onto a massive two-meter disc of pure solid silver"
+    ],
+    correct: 0,
+    trivia: "Working at the multi-cultural Norman court in Palermo, Al-Idrisi spent fifteen years interviewing ship captains, merchants, and ambassadors from across the Atlantic, Africa, the Levant, and Scandinavia, cross-referencing their logs with classical Ptolemaic data.\n\nThe resulting world map, inscribed on a massive 300-pound silver planisphere and published in an 8-volume book (Nuzhat al-Mushtaq), was oriented with South at the top (standard for Arab cartographers of the era). It divided the known world into seven climatic zones, providing the most accurate map of Eurasia and North Africa produced during the medieval era."
+  },
+
+  // --- MODERN PHYSICS, ASTRONOMY & THE UNIVERSE ---
+  {
+    id: "MC_112",
+    region: "Global Science",
+    category: "Nuclear Physics",
+    difficulty: "Intermediate",
+    question: "In 1938, Austrian-Swedish physicist Lise Meitner and Otto Frisch coined the term 'nuclear fission' after calculating that bombarding uranium with neutrons did what?",
+    options: [
+      "Fused two uranium nuclei into a stable transuranic super-element",
+      "Split the uranium nucleus into two lighter elements (barium and krypton), releasing massive energy according to E = mc²",
+      "Transmuted heavy uranium into non-radioactive lead without emitting radiation",
+      "Trapped thermal neutrons inside an electron cloud without mass loss"
+    ],
+    correct: 1,
+    trivia: "While chemist Otto Hahn observed strange traces of light barium in his laboratory after shooting slow neutrons at uranium, he was mystified by the result. Lise Meitner, walking through snowy Swedish woods during Christmas exile, modeled the uranium nucleus using George Gamow’s liquid drop model.\n\nShe calculated that the electrical repulsion of 92 protons overcame nuclear binding force when struck by a neutron, causing the droplet to elongate and snap into two smaller nuclei. The missing mass of the fragments matched Einstein’s mass-energy equation (E = mc²), releasing 200 million electron volts of kinetic energy per atom."
+  },
+  {
+    id: "MC_113",
+    region: "Global Science",
+    category: "Observational Astrophysics",
+    difficulty: "Intermediate",
+    question: "In April 2019, the Event Horizon Telescope (EHT) released the first direct visual image of the shadow of a supermassive black hole at the center of galaxy M87. How did they achieve the necessary resolution?",
+    options: [
+      "By launching a single 100-meter mirror telescope beyond the orbit of Saturn",
+      "By synchronizing eight millimeter-wave radio observatories across the planet into an Earth-sized virtual telescope (VLBI)",
+      "By focusing X-rays through gravitational microlensing around a nearby white dwarf",
+      "By deploying laser interferometers into solar orbit to capture gamma reflections"
+    ],
+    correct: 1,
+    trivia: "Resolving the event horizon of Messier 87's black hole—which sits 55 million light-years away—was compared to reading the date on a quarter in Los Angeles from a café in New York City. No single physical dish on Earth could ever be built large enough to see it.\n\nAstronomers utilized Very Long Baseline Interferometry (VLBI), coordinating atomic clocks at eight radio telescopes situated in Chile, Hawaii, the South Pole, Spain, and Greenland. By recording petabytes of radio waves and correlating the signals using supercomputers, they synthesized an aperture equivalent to an antenna the size of planet Earth."
+  },
+  {
+    id: "MC_114",
+    region: "Global Science",
+    category: "Deep Time & Evolutionary Biology",
+    difficulty: "Beginner",
+    question: "Roughly 541 million years ago, the 'Cambrian Explosion' occurred in the fossil record. What major evolutionary milestone defined this geological event?",
+    options: [
+      "The sudden appearance of complex, multicellular animal phyla with mineralized skeletons and specialized body plans",
+      "The emergence of flowering angiosperm plants and pollinating insects",
+      "The mass extinction of non-avian theropod dinosaurs due to climate cooling",
+      "The first migration of lobe-finned fish onto dry land"
+    ],
+    correct: 0,
+    trivia: "For the first three billion years of Earth's history, life was predominantly microscopic, single-celled, or soft-bodied (like the frond-like Ediacaran biota). Then, within a geologically brief window of 20 to 25 million years, the fossil record suddenly exploded with complex bilateral organisms possessing hard exoskeletons, compound eyes, gut tracts, and legs.\n\nFamous fossil beds like the Burgess Shale in Canada and Chengjiang in China preserve early ancestors of arthropods (trilobites), mollusks, and chordates (our own vertebrate ancestors), establishing modern animal body architectures."
+  },
+
+  // --- PHILIPPINES, POLYNESIA & AUSTRONESIAN DIASPORA ---
+  {
+    id: "MC_115",
+    region: "Southeast Asia",
+    category: "Linguistics & Austronesian Migration",
+    difficulty: "Intermediate",
+    question: "Linguistic and genetic evidence (the 'Out of Taiwan' model formulated by Peter Bellwood and Robert Blust) demonstrates that Austronesian languages spread across Madagascar, the Philippines, and Polynesia primarily through:",
+    options: [
+      "Overland horse cavalry migrations sweeping south through mainland Indochina",
+      "Maritime migrations pioneered by seafarers using outrigger sailing canoes and crop packages like taro and yams",
+      "Commercial trading voyages chartered by the Dutch East India Company",
+      "Involuntary refugee displacements caused by glacial sea-level drops during the Ice Age"
+    ],
+    correct: 1,
+    trivia: "Originating among indigenous seafaring farming populations in Taiwan roughly 4,500 years ago, Austronesian speakers developed edge-pegged sailing canoes equipped with stabilizing outrigger floats. They moved south through the Batanes islands into Luzon and the Visayas, dispersing east across Micronesia and Polynesia to Hawaii and Easter Island, and west across the Indian Ocean to Madagascar.\n\nThis maritime expansion represents the most geographically extensive language diaspora in the pre-modern world, sharing cognates (such as the word for eye: 'mata' in Tagalog, Malay, Hawaiian, and Malagasy) across half the globe."
+  },
+  {
+    id: "MC_116",
+    region: "Southeast Asia",
+    category: "Pre-Colonial History & Warfare",
+    difficulty: "Beginner",
+    question: "During the pre-colonial era in the Philippines, what were 'Lantaka'?",
+    options: [
+      "Swivel-mounted cast bronze or brass cannons mounted on sea-raiding balangay and karakoa warships",
+      "Woven rattan battle shields coated in boiled tree sap and volcanic sand",
+      "Poisoned blowgun darts tipped with sap extracted from the upas tree",
+      "Double-edged wavy iron daggers with forged silver scabbards"
+    ],
+    correct: 0,
+    trivia: "Originating from Malay and Javanese metallurgical traditions, lantakas were lightweight muzzle-loading bronze or brass cannons mounted on swivels along the gunwales of swift war vessels (karakoa) and coastal fortresses (kota). Because bronze did not rust in humid saltwater environments, it was preferred over European iron guns.\n\nWhen Spanish explorer Miguel López de Legazpi arrived in Manila in 1570, he encountered the fortified wooden palisade of Rajah Sulayman defended by an indigenous bronze cannon foundry operated by master artisan Panday Pira, who was later hired by the Spanish to cast artillery."
+  },
+  {
+    id: "MC_117",
+    region: "Europe",
+    category: "History of Medicine & Surgery",
+    difficulty: "Intermediate",
+    question: "In 1867, Scottish surgeon Joseph Lister revolutionized hospital operating rooms by publishing a paper advocating the use of what chemical antiseptic?",
+    options: [
+      "Carbolic acid (phenol) sprayed over surgical wounds, instruments, and dressings",
+      "Diluted sodium hypochlorite bleach used to wash hospital linens",
+      "Boiling grain alcohol poured directly into open fractures",
+      "Mercury sulfide powder dusted onto amputation stumps"
+    ],
+    correct: 0,
+    trivia: "In the mid-19th century, surgical operations were notorious death traps: surgeons routinely wore blood-encrusted coats without washing their hands between autopsies and surgeries, believing that surgical wound rotting ('hospital gangrene') was caused by chemical oxidation.\n\nReading Louis Pasteur’s papers on microorganisms causing fermentation, Lister deduced that wound infections were caused by living airborne germs. By spraying carbolic acid mist over incisions, soaking catgut ligatures in phenol, and requiring surgeons to wash hands before operating, post-surgical mortality rates plummeted from nearly 50% to under 15%."
   }
 ];
