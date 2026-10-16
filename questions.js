@@ -7,7 +7,7 @@ const QUESTIONS_DB = [
     region: "Southeast Asia",
     value: 900,
     displayValue: "900 CE",
-    clue: "Earliest known written legal document found in Luzon, recording debt clearance in gold."
+    clue: "Earliest known written legal document found in Luzon, recording complete debt clearance."
   },
   {
     id: "SEA_002",
@@ -20,7 +20,7 @@ const QUESTIONS_DB = [
   },
   {
     id: "SEA_003",
-    title: "Angkor Wat Built by Suryavarman II",
+    title: "Construction of Angkor Wat under Suryavarman II",
     category: "Architecture & Hydrology",
     region: "Southeast Asia",
     value: 1113,
@@ -29,7 +29,7 @@ const QUESTIONS_DB = [
   },
   {
     id: "SEA_004",
-    title: "Manunggul Burial Jar Crafted in Palawan",
+    title: "Manunggul Burial Jar Crafted in Tabon Caves, Palawan",
     category: "Ceramics & Art",
     region: "Southeast Asia",
     value: -890,
@@ -54,16 +54,16 @@ const QUESTIONS_DB = [
     region: "West Africa",
     value: 1324,
     displayValue: "1324 CE",
-    clue: "The Mali Empire's ruler travels to Mecca, causing long-lasting gold devaluation in the Mediterranean."
+    clue: "The Mali Empire's ruler travels to Mecca, causing decade-long currency inflation in Egypt."
   },
   {
     id: "AFR_002",
-    title: "Kingdom of Aksum Mints Bimetallic Currency and Erects Monolithic Stelae",
+    title: "Kingdom of Aksum Mints Bimetallic Coinage and Erects Stelae",
     category: "Trade & Architecture",
     region: "Horn of Africa",
     value: 330,
     displayValue: "c. 330 CE",
-    clue: "King Ezana unifies the Red Sea trade crossroads and mints trilingual coinage."
+    clue: "King Ezana unifies the Red Sea trade crossroads and mints trilingual currency."
   },
   {
     id: "AFR_003",
@@ -81,7 +81,7 @@ const QUESTIONS_DB = [
     region: "West Africa",
     value: 850,
     displayValue: "c. 850 CE",
-    clue: "Excavations in southeastern Nigeria reveal intricate lost-wax bronzes intertwined with beetles and cords."
+    clue: "Excavations in Nigeria reveal intricate lost-wax bronzes intertwined with beetles and cords."
   },
   {
     id: "AFR_005",
@@ -168,7 +168,7 @@ const QUESTIONS_DB = [
     region: "South America",
     value: -3000,
     displayValue: "c. 3000 BCE",
-    clue: "Oldest known urban center in the Americas, flourishing in Peru without ceramics or fortifications."
+    clue: "Oldest known urban center in the Americas, flourishing in Peru without defensive fortifications."
   },
   {
     id: "AME_002",
@@ -219,7 +219,7 @@ const QUESTIONS_DB = [
   },
   {
     id: "OCE_003",
-    title: "Polynesian Voyaging Canals Settle Aotearoa Becoming the Māori",
+    title: "Polynesian Voyagers Settle Aotearoa Becoming the Māori",
     category: "Maritime Migration",
     region: "Oceania",
     value: 1280,
@@ -235,7 +235,7 @@ const QUESTIONS_DB = [
     region: "Middle East",
     value: 1021,
     displayValue: "1021 CE",
-    clue: "Introduces experimental optics, refuting emission theory and proving sight is light entering the pupil."
+    clue: "Introduces experimental optics, refuting emission theory and proving vision is intromission."
   },
   {
     id: "MEA_002",
